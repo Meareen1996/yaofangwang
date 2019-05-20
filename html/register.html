@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册页</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../lib/jquery-3.1.1.min.js"></script>
+    <script src="../lib/jquery.cookie.js"></script>
+    <script src="../js/register.js"></script>
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <div class="header_top small">
+
+    </div>
+    <!-- 顶部完 -->
+
+    <!-- 头部 -->
+    <div class="header small">
+
+    </div>
+    <!-- 头部完 -->
+    <!-- 注册内容部分 -->
+    <div class="bg_strech">
+        <div class="register">
+            <div class="container clearfix">
+                <div class="form">
+                    <div class="tabnav3 clearfix">
+                        <ul class="navul">
+                            <li class="first">
+                                <a href="#" class="cur">
+                                    个人用户
+                                    <i>
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="">
+                                    供应商入驻
+                                    <i>
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="items">
+                        <ul class="iform" id="register_form">
+                            <li class="line">
+                                <label>注册信息（必填项）</label>
+                            </li>
+                            <li>
+                                <span class="note">
+                                    <label>*</label>用户名：
+                                </span>
+                                <span class="bginput">
+                                    <i class="user">
+                                    </i>
+                                    <input type="text" id="txtUserName" autocomplete="off" rege="/^[a-zA-Z0-9_-]{2,18}$/" maxlen="18"
+                                        minlen="2" maxlength="18" class="input_big" errinfo=""
+                                        info="请输入你的用户名，2-18个字符，只能字母、数字、中/下划线" remote-errinfo="用户名已注册，请更换"
+                                        remote-url="/common/IsAccountNameExist?account_name=">
+                                </span>
+                                <span class="oninfo">
+                                    <i></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="note">
+                                    <label>*</label>登录密码：
+                                </span>
+                                <span class="bginput">
+                                    <i class="pass">
+                                    </i>
+                                    <input type="password" autocomplete="off" id="txtUserPass"
+                                        rege="/^(?![0-9]+$)(?![a-zA-Z]+$)/" maxlen="20" minlen="6" maxlength="20"
+                                        class="input_big" errinfo="" info="请输入您的登录密码，6-20位数字和字符组合，两边不能有空符号">
+                                </span>
+                                <span class="oninfo">
+                                    <i></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="note">
+                                    <label>*</label>确认密码：
+                                </span>
+                                <span class="bginput">
+                                    <i class="pass">
+                                    </i>
+                                    <input type="password" autocomplete="off" id="txtUserPass2"
+                                        rege="/^(?![0-9]+$)(?![a-zA-Z]+$)/" maxlen="20" minlen="6" maxlength="20"
+                                        class="input_big" errinfo="" info="请输入您的确认密码，6-20位数字和字符组合，必须和密码相等"
+                                        equalto-errinfo="两次输入的密码不一致，请重新输入！" equalto="#txtUserPass">
+                                </span>
+                                <span class="oninfo">
+                                    <i></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="note">
+                                    <label>*</label>手机号码：
+                                </span>
+                                <span class="bginput">
+                                    <input type="text" id="txt_Mobile" autocomplete="off" rege="/^(1)[0-9]{10}$/" maxlen="11" minlen="11"
+                                        maxlength="11" class="input_big s" errinfo="" store="" info="请输入您的手机号码，11位数字"
+                                        remote-errinfo="手机号已注册，请更换" remote-url="/common/isMobileExist?mobile=">
+                                </span>
+                                <span class="oninfo">
+                                    <i></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="note">
+                                    <label>*</label>手机验证码：
+                                </span>
+                                <span class="bginput">
+                                    <input type="text" id="txtMobileCode" autocomplete="off" rege="" maxlen="6" minlen="6" maxlength="6"
+                                        class="input_big s" errinfo="" style="width:148px;" info="请输入6位手机验证码">
+                                </span>
+                                <span class="bginput">
+                                    <a href="#" class="btn9 fl js-send-msg" data-mobile="#txt_Mobile" data-type="2"
+                                        data-isvoice="0">发送验证码</a>
+                                    <a href="#" class="btn9 fl js-count" style="display:none">请查收短信（<label
+                                            class="js-count-num">60</label>秒）</a>
+                                </span>
+                                <span class="bginput">
+                                    <a class="btn11 fl js-send-voice" href="#" style="display:none;padding:0 10px;"
+                                        data-mobile="#txt_Mobile" data-type="2" data-isvoice="1">收不到短信？使用语音验证码</a>
+                                    <a href="#" class="btn11 fl js-count " style="display:none">电话拨打中...请留意来电（<label
+                                            class="js-count-num">60</label>秒）</a>
+                                </span>
+                                <span class="oninfo">
+                                    <i></i>
+                                </span>
+                            </li>
+                            <li class="line">
+                                <label>个人信息（选填项）</label>
+                            </li>
+                            <li>
+                                <span class="note">真实姓名：</span>
+                                <span class="bginput">
+                                    <input type="text" id="txt_RealName" autocomplete="off" rege="/^([\u4E00-\u9FA5]+|[a-zA-Z]+)$/"
+                                        maxlen="16" minlen="2" maxlength="60" class="input_big s" check="false"
+                                        errinfo="" info="请输入您的真实姓名，至少2个字符">
+                                </span>
+                                <span class="oninfo">
+                                    <i></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="note">电子邮箱：</span>
+                                <span class="bginput">
+                                    <input type="text" id="txtEmail" autocomplete="off"
+                                        rege="/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/"
+                                        maxlen="100" minlen="6" maxlength="100" class="input_big s" check="false"
+                                        errinfo="" info=" 请输入您的电子邮箱，格式如：xxx@qq.com，6-100个字符">
+                                </span>
+                                <span class="oninfo">
+                                    <i></i>
+                                </span>
+                            </li>
+                            <li class="display:none;">
+                                <span class="note">固定电话：</span>
+                                <span class="bginput">
+                                    <input type="text" id="txt_phone1" rege="/^[0-9]\d{2,3}$/" maxlen="4" minlen="3"
+                                        maxlength="4" class="input_big s" check="false" errinfo="" style="width:36px;"
+                                        par="txt" info="电话区号3或4位数字" autocomplete="off">
+                                </span>
+                                <span class="oninfo">
+                                    <i></i>
+                                </span>
+                                <span class="bginput">
+                                    &nbsp;&nbsp;- &nbsp;
+                                    <input type="text" id="txt_phone2" rege="/^[0-9]\d{6,7}$/" maxlen="8" minlen="7"
+                                        maxlength="8" class="input_big s" check="false" errinfo="" style="width:146px;"
+                                        info="电话号码7或8位数字（可选填）"autocomplete="off">
+                                </span>
+                                <span class="oninfo">
+                                    <i></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="note">所在地区：</span>
+                                <span class="bginput">
+                                    <input type="hidden" id="hf_accountRegionId" autocomplete="off">
+                                    <select id="accountProvince" class="iselect big" info="请选择您的所在地区" check="false">
+                                        <option value="-1">-请选择-</option>
+                                        <option value="40">北京市</option>
+                                        <option value="4821">天津市</option>
+                                        <option value="95">上海市</option>
+                                        <option value="96">重庆市</option>
+                                        <option value="97">黑龙江</option>
+                                        <option value="1265">吉林省</option>
+                                        <option value="1316">辽宁省</option>
+                                        <option value="1377">河北省</option>
+                                        <option value="1525">山西省</option>
+                                        <option value="1633">内蒙古</option>
+                                        <option value="1726">江苏省</option>
+                                        <option value="1792">浙江省</option>
+                                        <option value="1862">安徽省</option>
+                                        <option value="1942">福建省</option>
+                                        <option value="2011">江西省</option>
+                                        <option value="2103">山东省</option>
+                                        <option value="2212">河南省</option>
+                                        <option value="2339">湖北省</option>
+                                        <option value="2418">湖南省</option>
+                                        <option value="2521">广东省</option>
+                                        <option value="2610">广西</option>
+                                        <option value="2700">海南省</option>
+                                        <option value="2721">四川省</option>
+                                        <option value="2882">贵州省</option>
+                                        <option value="2970">云南省</option>
+                                        <option value="3112">西藏</option>
+                                        <option value="3192">陕西省</option>
+                                        <option value="3302">甘肃省</option>
+                                        <option value="3388">青海省</option>
+                                        <option value="3436">宁夏</option>
+                                        <option value="3442">新疆</option>
+                                    </select>
+                                    &nbsp;&nbsp;
+                                    <!-- <select id="accoutCity" class="iselect big disp" check="false">
+                                    </select> -->
+                                    &nbsp;&nbsp;
+                                    <!-- <select id="accountDistrict" class="iselect big disp" check="false">
+                                    </select> -->
+                                </span>
+                                <span class="oninfo">
+                                    <i></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="note">详细地址：</span>
+                                <span class="bginput">
+                                    <input n="" type="text" id="txtAddress" rege="" placeholder="填写详细的街道名及门牌号、楼宇名及房间号"
+                                        maxlen="128" minlen="1" maxlength="128" class="input_big s" check="false"
+                                        errinfo="" style="width:440px;background:#fbfbfb;" disabled="disabled"
+                                        info="请输入完整的详细地址信息，两边不能有空符号" autocomplete="off">
+                                    <input type="hidden" id="hf_lat" value="" autocomplete="off">
+                                    <input type="hidden" id="hf_lng" value="" autocomplete="off">
+                                </span>
+                                <span class="oninfo">
+                                </span>
+                            </li>
+                            <li class="license">
+                                <div class="ckdiv">
+                                    <div class="ck">
+                                        <i></i>
+                                    </div>
+                                    我同意
+                                </div>
+                                <a href="#">《药房网商城入驻用户服务协议》</a>
+                            </li>
+                            <li class="op">
+                                <a class="btn2 b2 js-login-submit" id="submit" href="javascript:void(0);"
+                                    data-form="#register_form">立即注册</a>
+                                <a href="javascript:void(0);" id="BtnSubmit3" class="btn8 b2 fl dis"
+                                    style="display:none;">正在提交，请稍等片刻！</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 注册内容部分完 -->
+
+    <!-- 底部 -->
+    <div class="footer small">
+
+    </div>
+    <!-- 底部完 -->
+
+    <!-- 弹窗 -->
+
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+.register {
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  background: #f4f4f4;
+}
+.register .form {
+  padding: 30px 0;
+}
+.register .form .tabnav3 .navul {
+  height: 49px;
+  background: #f4f4f4;
+}
+.register .form .tabnav3 .navul li {
+  position: relative;
+  float: left;
+  width: 180px;
+  height: 49px;
+  border-right: 1px solid #e5e5e5;
+  text-align: center;
+  line-height: 49px;
+}
+.register .form .tabnav3 .navul li a {
+  position: relative;
+  display: block;
+  border-top: 1px solid #e5e5e5;
+  font-size: 18px;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  line-height: 49px;
+  color: #333;
+}
+.register .form .tabnav3 .navul li a:hover {
+  color: #0cb95f;
+  text-decoration: underline;
+}
+.register .form .tabnav3 .navul li .cur {
+  height: 49px;
+  border-top: 2px solid #0cb95f;
+  background: #fff;
+  color: #0cb95f;
+  line-height: 49px;
+}
+.register .form .tabnav3 .first {
+  border-left: 1px solid #e5e5e5;
+}
+.register .form .items {
+  padding: 30px 0;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+}
+.register .form .items .iform li {
+  padding: 10px 0;
+  height: 40px;
+  color: #666;
+  font-size: 14px;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  line-height: 40px;
+}
+.register .form .items .iform .line {
+  margin: 10px 0;
+  padding: 0;
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px dotted #ccc;
+  background: #f9f9f9;
+}
+.register .form .items .iform .line label {
+  width: 165px;
+  text-align: right;
+  display: inline-block;
+}
+.register .form .items .iform .note {
+  float: left;
+  display: block;
+  margin-right: 10px;
+  width: 170px;
+  height: 40px;
+  color: #999;
+  text-align: right;
+  font-size: 14px;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  line-height: 40px;
+}
+.register .form .items .iform .note label {
+  margin-right: 5px;
+  color: #e50000;
+  vertical-align: middle;
+  font-size: 16px;
+  font-family: serif;
+}
+.register .form .items .iform .bginput {
+  position: relative;
+  float: left;
+  display: block;
+}
+.register .form .items .iform .bginput .btn9 {
+  display: block;
+  color: #999;
+  background: #f4f4f4;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  padding: 0 20px;
+  margin-left: 5px;
+}
+.register .form .items .iform .bginput .btn9:hover {
+  text-decoration: none;
+}
+.register .form .items .iform .bginput i {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  display: block;
+  width: 18px;
+  height: 25px;
+  background-image: url("../img/index/icons.png");
+}
+.register .form .items .iform .bginput .user {
+  background-position: -391px -109px;
+}
+.register .form .items .iform .bginput .pass {
+  background-position: -410px -109px;
+}
+.register .form .items .iform .s {
+  padding: 0 20px 0 10px;
+}
+.register .form .items .iform .input_big {
+  padding: 0 20px 0 35px;
+  width: 265px;
+  height: 40px;
+  border: 1px solid #e5e5e5;
+  color: #333;
+  font-size: 14px;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  line-height: 40px;
+}
+.register .form .items .iform .oninfo {
+  position: relative;
+  float: left;
+  margin-left: 5px;
+  padding: 0 10px 0 25px;
+  font-size: 12px;
+  font-family: Arial, "宋体";
+  display: none;
+}
+.register .form .items .iform .oninfo i {
+  position: absolute;
+  top: 13px;
+  left: 5px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/index/icons.png");
+}
+.register .form .items .iform .oninfo .ok {
+  background-position: -297px -120px;
+}
+.register .form .items .iform .focus {
+  margin-top: 7px;
+  margin-left: 12px;
+  padding-left: 10px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #e5e5e5;
+  background: #f4f4f4;
+}
+.register .form .items .iform .iselect {
+  height: 32px;
+  border: 1px solid #e5e5e5;
+  min-width: 90px;
+  vertical-align: middle;
+  font-size: 12px;
+}
+.register .form .items .iform .big {
+  height: 38px;
+}
+.register .form .items .iform .license {
+  padding-left: 180px;
+}
+.register .form .items .iform .license a {
+  color: #0cb95f;
+}
+.register .form .items .iform .license .ckdiv {
+  position: relative;
+  float: left;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.register .form .items .iform .license .ckdiv .ck {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  background: url(../img/index/icons.png) no-repeat;
+  background-position: -41px -25px;
+}
+.register .form .items .iform .license .ckdiv .ck i {
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.register .form .items .iform .license .ckdiv .ck .checked {
+  background: url(../img/index/icons.png) no-repeat;
+  background-position: -60px -25px;
+}
+.register .form .items .iform .op {
+  padding-left: 180px;
+}
+.register .form .items .iform .op a {
+  float: left;
+  width: 320px;
+}
+.register .form .items .iform .op .btn2 {
+  display: block;
+  background: #0cb95f;
+  color: #fff;
+  text-align: center;
+}
+.register .form .items .iform .op .b2 {
+  height: 48px;
+  font-size: 18px;
+  line-height: 48px;
+}
+.register .form .items .iform .op .btn8 {
+  display: block;
+  background: #e5e5e5;
+  color: #999;
+  text-align: center;
+  white-space: nowrap;
+}
+.register .form .items .iform .oninfo {
+  position: relative;
+  float: left;
+  margin-left: 5px;
+  padding: 0 10px 0 25px;
+  font-size: 12px;
+  font-family: Arial, "宋体";
+  display: none;
+}
+.register .form .items .iform .oninfo i {
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  background-image: url("../img/index/icons.png");
+}
+.register .form .items .iform .oninfo .ok {
+  background-position: -297px -120px;
+}
+.register .form .items .iform .borderbox {
+  border: 0;
+  background: #fff;
+}
+.register .form .items .iform .err {
+  color: #e16070;
+  border: 0;
+  background: #fff;
+}
+.register .form .items .iform .err i {
+  background-position: -280px -120px;
+}
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9998;
+}
+.tanchuang {
+  width: 370px;
+  height: 245px;
+  display: block;
+  left: 574px;
+  top: 91px;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  position: fixed;
+  z-index: 9999;
+  padding: 5px;
+  background: #a9a9a9;
+  min-height: 220px;
+  min-width: 350px;
+}
+.tanchuang #inside {
+  height: 245px;
+  background-color: #fff;
+  min-height: 220px;
+}
+.tanchuang #inside h2 {
+  -webkit-user-select: none;
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 40px;
+  height: 40px;
+  padding-left: 15px;
+  background: #e7e7e7;
+  cursor: move;
+  font-weight: normal;
+  color: #333;
+}
+.tanchuang #inside h2 a {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background-image: url("../img/index/icons.png") no-repeat;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  display: inline-block;
+  background-position: -357px -13px;
+}
+.tanchuang #inside .boxcentent {
+  padding: 20px;
+  position: relative;
+}
+.tanchuang #inside .boxcentent .icon {
+  background-image: url("../img/index/icons.png") no-repeat;
+  display: block;
+  position: absolute;
+}
+.tanchuang #inside .boxcentent .success {
+  top: 45px;
+  left: 45px;
+  width: 32px;
+  height: 26px;
+  background-position: -100px -205px;
+}
+.tanchuang #inside .boxcentent .txt {
+  padding: 10px 0 0px 60px;
+  font-size: 14px;
+}
+.tanchuang #inside .boxcentent .txt .please {
+  padding: 0px 0px 15px 0px;
+}
+.tanchuang #inside .boxcentent .txt .iform .bginput {
+  position: relative;
+  float: left;
+  display: block;
+}
+.tanchuang #inside .boxcentent .txt .iform #canvas {
+  vertical-align: middle;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+.tanchuang #inside .boxcentent .txt .iform .input_big {
+  padding: 0 20px 0 35px;
+  width: 265px;
+  height: 40px;
+  border: 1px solid #e5e5e5;
+  color: #333;
+  font-size: 14px;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  line-height: 40px;
+}
+.tanchuang #inside .boxcentent .txt .iform .s {
+  padding: 0 20px 0 10px;
+  width: 80px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ff9900;
+  text-align: center;
+  text-transform: uppercase;
+}
+.tanchuang #inside .boxcentent .txt .iform img {
+  -webkit-backface-visibility: hidden;
+}
+.tanchuang #inside .boxcentent .txt .iform .vcode {
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 100px;
+  margin-left: 5px;
+  float: left;
+  height: 42px;
+  line-height: 42px;
+}
+.tanchuang #inside .boxcentent .txt #errTipM {
+  margin-top: 15px;
+  color: red;
+}
+.tanchuang #inside .opdiv {
+  margin: 0 auto;
+}
+.tanchuang #inside .opdiv .send-btn1 {
+  display: block;
+  margin: 0px 35px 0px 80px;
+  background: #0cb95f;
+  color: #fff;
+  text-align: center;
+  padding: 6px 20px;
+  border: 1px solid #0cb95f;
+}
+.tanchuang #inside .opdiv .send-btn1:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.tanchuang #inside .opdiv .send-btn2 {
+  display: block;
+  background: #fff;
+  color: #0cb95f;
+  text-align: center;
+  padding: 6px 20px;
+  border: 1px solid #0cb95f;
+}

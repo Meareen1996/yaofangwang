@@ -1,0 +1,400 @@
+.main .pag-left {
+  margin: 20px 20px 0 0;
+  width: 220px;
+}
+.main .pag-left .the_pl {
+  margin-bottom: 20px;
+  border: 1px solid #e5e5e5;
+}
+.main .pag-left .the_pl h4 {
+  padding: 0 20px;
+  height: 40px;
+  background: #f4f4f4;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  line-height: 40px;
+}
+.main .pag-left .the_pl .single-category a:hover {
+  background: #0cb95f;
+  color: #fff;
+}
+.main .pag-left .the_pl .single-category h5 {
+  padding: 0 30px;
+  width: 158px;
+  height: 40px;
+  border-top: 1px solid #e5e5e5;
+  background: none repeat scroll 0 0 #f4f4f4;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  line-height: 40px;
+  cursor: pointer;
+}
+.main .pag-left .the_pl .single-category h5 i {
+  float: left;
+  display: inline-block;
+  margin: 13px 10px 10px 0;
+  width: 15px;
+  height: 15px;
+  background: url("../img/index/icons.png") no-repeat;
+  background-position: -214px -109px;
+}
+.main .pag-left .the_pl .single-category .specific-stuff {
+  display: block;
+  padding: 10px 22px;
+}
+.main .pag-left .the_pl .single-category .specific-stuff a {
+  display: block;
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  overflow: hidden;
+  padding: 0 10px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 1px 1px 0;
+}
+.main .pag-left .pag-left-bottom .the_goods li {
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.main .pag-left .pag-left-bottom .the_goods li a {
+  display: block;
+}
+.main .pag-left .pag-left-bottom .the_goods li .photo {
+  display: block;
+  text-align: center;
+  height: 160px;
+  width: 178px;
+}
+.main .pag-left .pag-left-bottom .the_goods li .photo img {
+  width: 160px;
+  height: 160px;
+}
+.main .pag-left .pag-left-bottom .the_goods li .txt {
+  display: block;
+  overflow: hidden;
+  margin-top: 5px;
+  line-height: 18px;
+  text-align: left;
+}
+.main .pag-left .pag-left-bottom .the_goods li .nofix {
+  height: auto;
+}
+.main .pag-left .pag-left-bottom .the_goods li .st {
+  padding: 5px 0;
+  color: #999;
+  line-height: 20px;
+  height: 16px;
+  overflow: hidden;
+}
+.main .pag-left .pag-left-bottom .the_goods li .subtitle {
+  padding: 2px 0;
+  color: #f90;
+  line-height: 20px;
+}
+.main .pag-left .pag-left-bottom .the_goods li .money {
+  height: 24px;
+  color: #e50000;
+  text-align: center;
+  font-style: normal;
+  font-family: Arial;
+  line-height: 24px;
+}
+.main .pag-right {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 950px;
+}
+.main .pag-right .select {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  line-height: 24px;
+}
+.main .pag-right .select .opt {
+  padding: 0 10px;
+  height: 40px;
+  background: #f4f4f4;
+  line-height: 40px;
+}
+.main .pag-right .select .opt .tj {
+  float: right;
+  color: #999;
+}
+.main .pag-right .select .opt .tj b {
+  margin: 0 5px;
+  color: #333;
+  font-weight: normal;
+}
+.main .pag-right .select .sitems {
+  padding: 5px 10px;
+  background: #fff;
+}
+.main .pag-right .select .sitems li {
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+  padding: 6px 0 6px 100px;
+  border-bottom: 1px solid #efefef;
+  line-height: 16px;
+}
+.main .pag-right .select .sitems li .bit {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  float: none;
+  padding: 0;
+  width: 70px;
+  height: 16px;
+  color: #999;
+  text-align: right;
+  line-height: 16px;
+}
+.main .pag-right .select .sitems li a {
+  float: left;
+  overflow: hidden;
+  margin: 0 11px 0 0;
+  padding: 7px 10px;
+  width: 62px;
+  white-space: nowrap;
+}
+.main .pag-right .select .sitems li .plus {
+  position: absolute;
+  top: 9px;
+  right: 5px;
+  width: 45px;
+  height: 24px;
+  line-height: 24px;
+  cursor: pointer;
+  color: #999;
+}
+.main .pag-right .select .sitems li .plus .upward {
+  background-position: -291px -27px;
+}
+.main .pag-right .select .sitems li .plus .collapse {
+  display: none;
+}
+.main .pag-right .select .sitems .tryExpand {
+  height: auto !important;
+}
+.main .pag-right .select .sitems .nb {
+  border-bottom: 0;
+}
+.main .pag-right .filter {
+  padding: 0 10px;
+  height: 40px;
+  border: 1px solid #e5e5e5;
+  background: #f4f4f4;
+  line-height: 24px;
+}
+.main .pag-right .filter .ckdiv {
+  margin-top: 7px;
+  margin-left: 10px;
+  position: relative;
+  float: left;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.main .pag-right .filter .ckdiv .ra {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-position: -79px -25px;
+  vertical-align: middle;
+}
+.main .pag-right .filter .ckdiv .ra .checked {
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../img/index/icons.png) no-repeat;
+  background-position: -98px -25px;
+}
+.main .pag-right .filter .ckdiv .ra .n {
+  margin-left: 0;
+}
+.main .pag-right .filter .page {
+  float: right;
+  margin-top: 8px;
+  height: 25px;
+  line-height: 25px;
+}
+.main .pag-right .filter .page a {
+  float: left;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../img/index/icons.png) no-repeat;
+  background-repeat: no-repeat;
+}
+.main .pag-right .filter .page .l {
+  background-position: -254px 0;
+}
+.main .pag-right .filter .page .d {
+  background-position: -202px 0;
+}
+.main .pag-right .filter .page .num {
+  float: left;
+  margin: 0 7px;
+}
+.main .pag-right .filter .page .num label {
+  color: #0cb95f;
+}
+.main .pag-right .filter .page .r {
+  background-position: -280px 0;
+}
+.main .pag-right .goodlist {
+  margin-top: 10px;
+  overflow: hidden;
+}
+.main .pag-right .goodlist li {
+  float: left;
+  margin-right: 18px;
+  width: 224px;
+  height: 349px;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
+}
+.main .pag-right .goodlist li .info {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #fff;
+  z-index: 1;
+  background: #fff;
+  width: 221px;
+  padding-top: 5px;
+}
+.main .pag-right .goodlist li .info .photo {
+  display: block;
+  text-align: center;
+  margin: 0 10px;
+  height: 195px;
+  position: relative;
+}
+.main .pag-right .goodlist li .info .photo img {
+  width: 190px;
+  height: 190px;
+}
+.main .pag-right .goodlist li .info .money {
+  height: 24px;
+  color: #e50000;
+  text-align: center;
+  text-align: left;
+  font-size: 18px;
+  font-family: "\534E\6587\7EC6\9ED1", Arial;
+  line-height: 24px;
+  margin: 0 10px;
+  font-style: normal;
+}
+.main .pag-right .goodlist li .info .txt {
+  display: block;
+  overflow: hidden;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 10px;
+  margin-top: 3px;
+}
+.main .pag-right .goodlist li .info .st {
+  color: #999;
+  margin: 0 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 20px;
+  line-height: 26px;
+}
+.main .pag-right .goodlist li .info .ph {
+  overflow: hidden;
+  height: 30px;
+  color: #999;
+  line-height: 30px;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+.main .pag-right .goodlist li .info .ph img {
+  height: 14px;
+  vertical-align: middle;
+  width: auto;
+}
+.main .pag-right .goodlist li .info .op {
+  overflow: hidden;
+  margin-top: 3px;
+  padding: 0;
+  border-top: 1px dashed #f5f5f5;
+  text-align: center;
+  line-height: 28px;
+  height: 28px;
+}
+.main .pag-right .goodlist li .info .op span {
+  display: inline-block;
+  border-right: 1px solid #fff;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 3px;
+  float: left;
+}
+.main .pag-right .goodlist li .info .op span b {
+  margin: 0 2px;
+  color: #0cb95f;
+  font-weight: normal;
+}
+.main .pag-right .goodlist li .info .op a {
+  display: none;
+  width: 80px;
+  color: #fff;
+  background: #e50000;
+  float: left;
+}
+.main .pag-right .goodlist li .info .op .a_detail {
+  margin-left: -1px;
+  display: block;
+  width: 80px;
+  color: #fff;
+  background: #e50000;
+  float: left;
+}
+.main .pag-right .goodlist li .info .n {
+  position: absolute;
+  left: 0;
+  display: none;
+  height: auto;
+  white-space: normal;
+  line-height: 22px;
+  margin: 6px 10px;
+}
+.main .pag-right .goodlist li .info .n_factory {
+  width: 100%;
+  display: block !important;
+  position: absolute;
+  left: -11px;
+  top: 343px;
+  height: auto;
+  white-space: normal;
+  border: 1px solid #e5e5e5;
+  border-top: 0;
+}
+.main .pag-right .goodlist li .showborder {
+  border: 1px solid #e5e5e5;
+}
+.main .pag-right .goodlist li:nth-child(4n+4) {
+  margin-right: 0;
+}
+.main .pag-right .goodlist .active {
+  z-index: 3;
+}
+.main .pag-right .pager {
+  margin: 10px 0;
+  font-family: arial;
+}
+.main .pag-right .pager .layui-laypage {
+  float: right;
+}

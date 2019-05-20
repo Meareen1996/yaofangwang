@@ -1,0 +1,155 @@
+.footer .user-guidance {
+  padding: 20px 0;
+  height: 135px;
+  border-top: 1px solid #e8e8e8;
+  background: #f4f4f4;
+}
+.footer .user-guidance dl {
+  float: left;
+  width: 147px;
+}
+.footer .user-guidance dl dt {
+  color: #6a6a6a;
+  font-size: 14px;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  line-height: 26px;
+}
+.footer .user-guidance dl .txt-center {
+  text-align: center !important;
+}
+.footer .user-guidance dl dd {
+  margin-top: 6px;
+  text-align: left;
+}
+.footer .user-guidance dl dd a {
+  display: block;
+  overflow: hidden;
+  height: 26px;
+  color: #888;
+  text-align: left;
+  line-height: 26px;
+}
+.footer .user-guidance dl dd a:hover {
+  color: #0cb95f;
+}
+.footer .user-guidance dl dd .qr {
+  height: auto;
+}
+.footer .user-guidance .mr20 {
+  margin-right: 20px;
+}
+.footer .user-guidance .mr20 dt {
+  color: #6a6a6a;
+  font-size: 14px;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  line-height: 26px;
+}
+.footer .user-guidance .mr20 dd {
+  margin-top: 6px;
+}
+.footer .user-guidance .mr20 dd .qr img {
+  width: 80px;
+  height: 80px;
+}
+.footer .user-guidance .last {
+  width: 90px;
+}
+.footer .user-guidance .last dt {
+  color: #6a6a6a;
+  font-size: 14px;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  line-height: 26px;
+}
+.footer .user-guidance .last dd {
+  margin-top: 6px;
+}
+.footer .user-guidance .last dd a {
+  display: block;
+  overflow: hidden;
+  color: #888;
+  text-align: left;
+  line-height: 26px;
+}
+.footer .user-guidance .last dd a img {
+  width: 80px;
+  height: 80px;
+}
+.footer .copyright {
+  padding: 20px 0;
+  height: 218px;
+  background: #444a50;
+  color: #959aa0;
+}
+.footer .copyright p {
+  padding: 8px 0;
+  color: #959aa0;
+}
+.footer .copyright p a {
+  padding: 0 10px;
+  color: #959aa0;
+}
+.footer .copyright .white a {
+  color: #dee5ea;
+}
+.footer .copyright .white .first {
+  padding: 0;
+}
+.footer .copyright .zz span {
+  display: block;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+}
+.footer .copyright .zz .mr {
+  margin-right: 18px;
+}
+.footer .copyright .copy {
+  font-family: Tahoma;
+}
+.footer .copyright .cert {
+  margin-top: 10px;
+}
+.footer .copyright .cert .icon {
+  float: left;
+  margin-right: 10px;
+  width: 100px;
+  height: 40px;
+  background: url("../img/index/icon_rz.gif");
+  line-height: 40px;
+}
+.footer .copyright .cert .icon a {
+  display: block;
+  width: 100px;
+  height: 40px;
+}
+.footer .copyright .cert .gs {
+  background-position: 0 0;
+}
+.footer .copyright .cert .bj {
+  background-position: 0 -40px;
+}
+.footer .copyright .cert .ba {
+  background-position: 0 -80px;
+}
+.footer .copyright .cert .ls {
+  background-position: 0 -120px;
+}
+.footer .copyright .cert .zx {
+  background-position: 0 -160px;
+}
+.footer .copyright .cert .cx {
+  background-position: 0 -240px;
+}
+.footer .copyright .cert .al {
+  background-position: 0 -200px;
+}
+.footer .copyright .cert .sw {
+  background-position: 0 -320px;
+}
+.footer .copyright .cert .rd {
+  background-position: 0 -360px;
+}
+.footer .copyright .font {
+  margin-top: 5px;
+  padding: 5px 0;
+}

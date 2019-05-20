@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <script src="../lib/jquery-3.1.1.min.js"></script>
+    <script src="../lib/jquery.cookie.js"></script>
+    <script src="../js/cart.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <!-- 从首页引入 -->
+    </div>
+    <div class="logo_header">
+        <div class="container">
+            <div class="logo">
+                <a href="name">
+                    <img src="../img/index/logo.jpg" alt="">
+                </a>
+                <div class="sub">
+                    <span class="sub_name">需求清单</span>
+                </div>
+            </div>
+
+            <div class="step s1" style="display:block"></div>
+        </div>
+    </div>
+
+    <div class="order_list">
+        <div class="container">
+            <div class="tabnav">
+                <ul class="navul">
+                    <li><a class="cur" href="javascript:void(0);">商品列表</a></li>
+                </ul>
+            </div>
+            <!-- 订单表 -->
+            <table>
+                <tbody class="order_content">
+                    <tr>
+                        <td class="w1">
+                            <div class="ck js-checkAll js-ck"><i class=""></i></div>
+                        </td>
+                        <td class="w2"><span id="checkAlltxt">全选</span></td>
+                        <td class="w3">商品信息</td>
+                        <td class="w4">单价（元）</td>
+                        <td class="w5">数量</td>
+                        <td class="w6">小计（元）</td>
+                        <td class="w7">操作</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- 订单商品 -->
+
+    <!-- 底部结算 -->
+    <div class="container">
+        <table class="table03">
+            <tbody>
+                <tr>
+                    <td class="w1 bat-opt clearfix">
+                        <label class="clearfix bat-opt-ck fl">
+                            <div class="ck js-checkAll js-ck fl"><i class="checked"></i></div>
+                            <span class="ck-txt fl">全选</span>
+                        </label>
+                        <span class="bat-opt-txt fl js-xz-delete">删除</span>
+
+                        <a class="nonexta" href="//www.yaofangwang.com">&lt;&lt;我再逛逛</a>
+                    </td>
+                    <td class="w2">商品金额总计（不含运费及包装费）<span class="money fsize22">￥<span class="num js-cart-total"
+                                id="ordertotal">0</span></span></td>
+                    <td class="w3"><a class="btn b2 fyahei fsize22 js-buy" href="javascript:void(0);">去结算</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 底部结算完 -->
+
+    <div class="footer">
+        <!-- 从首页引入 -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/first.css">
+    <script src="lib/jquery-3.1.1.min.js"></script>
+    <script src="lib/jquery.cookie.js"></script>
+    <script src="lib/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- 最上面的头部部分开始 -->
+    <div class="header">
+        <div class="container">
+            <!-- 头部左边 -->
+            <ul class="left">
+                <li>
+                    <i class="some-icon sc"></i>
+                    <a href="javascript:void(0);">收藏药房网商城</a>
+                    <s></s>
+                </li>
+                <li>
+                    <i class="some-icon wx"></i>
+                    <a href="javascript:void(0);">微信查价</a>
+                    <s></s>
+                </li>
+                <li>
+                    <i class="some-icon sjapp"></i>
+                    <a href="javascript:void(0);">手机APP</a>
+                </li>
+            </ul>
+
+            <ul class="right">
+                <li class="enter-in"><a href="javascript:void(0);">商家入驻</a></li>
+                <li class="Website-navigation">
+                    <a href="javascript:void(0);">网站导航</a>
+                    <i class="some-icon top-dh"></i>
+                    <div class="line"></div>
+                    <!-- 下拉菜单 -->
+                    <div class="other-website">
+                        <div class="health-Consultation">
+                            <div class="h1">健康咨询</div>
+                            <a href="javascript:void(0);">医药咨询</a>
+                            <a href="javascript:void(0);">疾病知识</a>
+                            <a href="javascript:void(0);">用药指导</a>
+                            <a href="javascript:void(0);">健康问答</a>
+                            <a href="javascript:void(0);">疾病症状库</a>
+                        </div>
+                        <div class="Characteristic-service">
+                            <div class="h1">特色服务</div>
+                            <a href="javascript:void(0);">健康专题</a>
+                            <a href="javascript:void(0);">健康百科</a>
+                            <a href="javascript:void(0);">医院大全</a>
+                            <a href="javascript:void(0);">药芳联盟</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="javascript:void(0);">客服中心</a></li>
+                <li class="collection"><a href="javascript:void(0);">收藏夹</a><s></s></li>
+                <li class="personal">
+                    <a href="javascript:void(0);">个人中心</a>
+                    <i class="some-icon top-dh"></i>
+                    <s></s>
+                    <!-- 下拉菜单 -->
+                    <div class="personal-content">
+                        <ul>
+                            <li><a href="javascript:void(0);">需求管理</a></li>
+                            <li><a href="javascript:void(0);">地址管理</a></li>
+                            <li><a href="javascript:void(0);">我的咨询</a></li>
+                            <li><a href="javascript:void(0);">我的问答</a></li>
+                            <li><a href="javascript:void(0);">最近浏览</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cart">
+                    <i class="some-icon top-cart"></i>
+                    <a href="html/cart.html">需求单(<label class="cartnum">0</label>)</a>
+                </li>
+                <li class="reg-and-login">
+                    <a href="html/login.html">登录</a>
+                    <i>/</i>
+                    <a href="html/register.html">免费注册</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 最上面的头部部分完 -->
+
+    <!-- 搜索框部分开始 -->
+    <div class="top-search">
+        <div class="container">
+            <div class="logo">
+                <h1>药房网商城</h1>
+            </div>
+            <div class="mid-search">
+                <form class="search">
+                    <ul class="opt-list">
+                        <div class="line"></div>
+                        <li>
+                            <a>医院</a>
+                            <i class="some-icon search-box"></i>
+                        </li>
+                        <li>
+                            <a>商品</a>
+                            <i class="some-icon search-box"></i>
+                        </li>
+                        <li>
+                            <a>商家</a>
+                            <i class="some-icon search-box"></i>
+                        </li>
+                        <li>
+                            <a>厂家</a>
+                            <i class="some-icon search-box"></i>
+                        </li>
+                    </ul>
+                    <input class="keyword" type="text" placeholder="请输入医院名称">
+                    <button class="begin-search" value="搜索">搜索</button>
+                </form>
+                <ul class="suggest-word">
+                    <li><a href="javascript:void(0);">补血</a></li>
+                    <li><a href="javascript:void(0);">999</a></li>
+                    <li><a href="javascript:void(0);">片仔癀</a></li>
+                    <li><a href="javascript:void(0);">阿胶</a></li>
+                    <li><a href="javascript:void(0);">金戈</a></li>
+                    <li><a href="javascript:void(0);">汤臣倍健</a></li>
+                </ul>
+            </div>
+            <div class="promise">
+                <i class="some-icon promise-pic"></i>
+            </div>
+
+        </div>
+    </div>
+    <!-- 搜索框部分完 -->
+    <!-- 导航栏 -->
+    <!-- 横导航栏 -->
+    <div class="nav">
+        <div class="container">
+            <ul class="horizontal-nav">
+                <li class="t-nav category">
+                    <a href="javascript:void(0);">全部商品分类</a>
+                    <!-- 竖导航栏 -->
+                    <ul class="vertical-nav">
+                        <li class="v-nav Chinese-Western">
+                            <div class="icon-left">
+                                <i class="some-icon med-zy"></i>
+                            </div>
+                            <div class="content-right">
+                                <h2><a href="html/list.html">中西药品</a></h2>
+                                <div class="classification">
+                                    <a href="javascript:void(0);">肠胃用药</a>
+                                    <a href="javascript:void(0);"> 感冒药</a>
+                                    <a href="javascript:void(0);">心脑血管</a>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="v-nav medical">
+                            <div class="icon-left">
+                                <i class="some-icon med-zx"></i>
+                            </div>
+                            <div class="content-right">
+                                <h2><a>医疗器械</a></h2>
+                                <div class="classification">
+                                    <a href="javascript:void(0);">血压计</a>
+                                    <a href="javascript:void(0);"> 血糖仪</a>
+                                    <a href="javascript:void(0);">创可贴</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="v-nav health-care">
+                            <div class="icon-left">
+                                <i class="some-icon med-ys"></i>
+                            </div>
+                            <div class="content-right">
+                                <h2><a>养生保健</a></h2>
+                                <div class="classification">
+                                    <a href="javascript:void(0);">滋补药酒</a>
+                                    <a href="javascript:void(0);">补钙</a>
+                                    <a href="javascript:void(0);">补气养血</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="v-nav family-planning-supplies">
+                            <div class="icon-left">
+                                <i class="some-icon med-js"></i>
+                            </div>
+                            <div class="content-right">
+                                <h2 class="family-planning-supplies"><a>计生用品</a></h2>
+                                <div class="classification">
+                                    <a href="javascript:void(0);">避孕套</a>
+                                    <a href="javascript:void(0);">避孕药</a>
+                                    <a href="javascript:void(0);">验孕检查</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="v-nav Chinese-herbal-medicine">
+                            <div class="icon-left">
+                                <i class="some-icon med-zy"></i>
+                            </div>
+                            <div class="content-right">
+                                <h2 class="traditional-Chinese-medicine"> <a>中药饮片</a></h2>
+                                <div class="classification">
+                                    <a href="javascript:void(0);"> 西洋参</a>
+                                    <a href="javascript:void(0);">三七</a>
+                                    <a href="javascript:void(0);">灵芝孢子粉</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="v-nav beauty-skin-care">
+                            <div class="icon-left">
+                                <i class="some-icon med-mr"></i>
+                            </div>
+                            <div class="content-right">
+                                <h2> <a>美容护肤</a></h2>
+                                <div class="classification">
+                                    <a href="javascript:void(0);">祛痘</a>
+                                    <a href="javascript:void(0);">祛斑</a>
+                                    <a href="javascript:void(0);">疤痕修复</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- ================================================================ -->
+                    <!-- 二级菜单 -->
+                    <div class="sec-nav-box">
+                        <!-- 第一个 -->
+                        <div class="secondary-navigation">
+                            <div class="sec-left zx-drug">
+                                <ul>
+                                    <li class="sec-content">
+                                        <div class="sec-left-guider">
+                                            <a href="javascript:void(0);">肠胃用药</a>
+                                            <i class="some-icon changwei"></i>
+                                        </div>
+                                        <div class="sec-left-guider-content">
+                                            <a href="javascript:void(0);">胃肠用药</a>
+                                            <a href="javascript:void(0);">胃炎</a>
+                                            <a href="javascript:void(0);">胃溃疡</a>
+                                            <a href="javascript:void(0);">急性肠炎</a>
+                                            <a href="javascript:void(0);">十二指肠溃疡</a>
+                                            <a href="javascript:void(0);">便秘</a></br>
+                                            <a href="javascript:void(0);">消化不良</a>
+                                            <a href="javascript:void(0);">痔疮</a>
+                                            <a href="javascript:void(0);">腹痛腹泻</a>
+                                        </div>
+                                    </li>
+                                    <li class="sec-content">
+                                        <div class="sec-left-guider">
+                                            <a href="javascript:void(0);">呼吸系统</a>
+                                            <i class="some-icon changwei"></i>
+                                        </div>
+                                        <div class="sec-left-guider-content">
+                                            <a href="javascript:void(0);">支气管炎</a>
+                                            <a href="javascript:void(0);">肺热咳嗽</a>
+                                            <a href="javascript:void(0);">哮喘</a>
+                                            <a href="javascript:void(0);">气管炎</a>
+                                            <a href="javascript:void(0);">肺结核</a>
+                                        </div>
+                                    </li>
+                                    <li class="sec-content">
+                                        <div class="sec-left-guider">
+                                            <a href="javascript:void(0);">肠胃用药</a>
+                                            <i class="some-icon changwei"></i>
+                                        </div>
+                                        <div class="sec-left-guider-content">
+                                            <a href="javascript:void(0);">心脑血管</a>
+                                            <a href="javascript:void(0);">高血压</a>
+                                            <a href="javascript:void(0);"> 糖尿病</a>
+                                            <a href="javascript:void(0);"> 冠心病</a>
+                                            <a href="javascript:void(0);"> 高血脂</a>
+                                            <a href="javascript:void(0);">心肌炎</a></br>
+                                            <a href="javascript:void(0);"> 脑血栓</a>
+                                            <a href="javascript:void(0);">中风偏瘫</a>
+                                            <a href="javascript:void(0);">低血压</a>
+                                            <a href="javascript:void(0);"> 静脉曲张</a>
+                                            <a href="javascript:void(0);">动脉硬化</a>
+                                        </div>
+                                    </li>
+                                    <li class="sec-content">
+                                        <div class="sec-left-guider">
+                                            <a href="javascript:void(0);">风湿骨科</a>
+                                            <i class="some-icon changwei"></i>
+                                        </div>
+                                        <div class="sec-left-guider-content">
+                                            <a href="javascript:void(0);">风湿病</a>
+                                            <a href="javascript:void(0);">跌打损伤</a>
+                                            <a href="javascript:void(0);">胃溃疡</a>
+                                            <a href="javascript:void(0);">关节炎</a>
+                                            <a href="javascript:void(0);">颈椎病</a>
+                                            <a href="javascript:void(0);">骨质疏松</a></br>
+                                            <a href="javascript:void(0);">痛风</a>
+                                            <a href="javascript:void(0);">坐骨神经痛</a>
+                                            <a href="javascript:void(0);">腰肌劳损</a>
+                                            <a href="javascript:void(0);">肩周炎</a>
+                                            <a href="javascript:void(0);">腰椎间盘突出</a>
+                                        </div>
+                                    </li>
+                                    <li class="sec-content">
+                                        <div class="sec-left-guider">
+                                            <a href="javascript:void(0);">抗肿瘤药</a>
+                                            <i class="some-icon changwei"></i>
+                                        </div>
+                                        <div class="sec-left-guider-content">
+                                            <a href="javascript:void(0);">白血病</a>
+                                            <a href="javascript:void(0);">肺癌</a>
+                                            <a href="javascript:void(0);">胃癌</a>
+                                            <a href="javascript:void(0);">肝癌</a>
+                                            <a href="javascript:void(0);">肾癌</a>
+                                            <a href="javascript:void(0);">乳腺</a></br>
+                                            <a href="javascript:void(0);">巢癌</a>
+                                            <a href="javascript:void(0);">食道</a>
+                                            <a href="javascript:void(0);">癌鼻</a>
+                                            <a href="javascript:void(0);">咽癌</a>
+                                            <a href="javascript:void(0);">胰腺癌</a>
+                                        </div>
+                                    </li>
+                                    <li class="sec-content">
+                                        <div class="sec-left-guider">
+                                            <a href="javascript:void(0);">五官科药</a>
+                                            <i class="some-icon changwei"></i>
+                                        </div>
+                                        <div class="sec-left-guider-content">
+                                            <a href="javascript:void(0);">眼科</a>
+                                            <a href="javascript:void(0);">鼻科</a>
+                                            <a href="javascript:void(0);">耳科</a>
+                                            <a href="javascript:void(0);">口腔</a>
+                                            <a href="javascript:void(0);">科喉科</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sec-right">
+                                <ul class="factory-logo">
+                                    <li class="f-logo"><a href="javascript:void(0);"><img
+                                                src="img/index/zxyp-logo-1.png" alt=""></a>
+                                    </li>
+                                    <li class="f-logo"><a href="javascript:void(0);"><img
+                                                src="img/index/zxyp-logo-2.png" alt=""></a>
+                                    </li>
+                                    <li class="f-logo"><a href="javascript:void(0);"><img
+                                                src="img/index/zxyp-logo-3.png" alt=""></a>
+                                    </li>
+                                    <li class="f-logo"><a href="javascript:void(0);"><img
+                                                src="img/index/zxyp-logo-6.png" alt=""></a>
+                                    </li>
+                                </ul>
+                                <a href="javascript:void(0);" class="shenbao">
+                                    <img src="img/index/506def1e-65c9-497a-9e65-f8aaab8fcdaa9794.jpg" alt="">
+                                </a>
+                                <ul class="recommended-merchant">
+                                    <h6>推荐商家</h6>
+                                    <li><a href="javascript:void(0);"> 阜阳小松医药有限公司程集大药房111111111111</a></li>
+                                    <li><a href="javascript:void(0);"> 北京惠民泰康医药有限公司</a></li>
+                                    <li><a href="javascript:void(0);"> 吉林市龙潭区唐房大药房</a></li>
+                                    <li><a href="javascript:void(0);"> 鞍山市立山区今一康大药房</a></li>
+                                    <li><a href="javascript:void(0);"> 成都隆安堂大药房有限公</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- ======================================================== -->
+                        <!-- 第二个 -->
+                        <div class="secondary-navigation">
+                            <div class="sec-left zx-drug">
+                                <ul>
+                                    <li class="sec-content">
+                                        <div class="sec-left-guider">
+                                            <a href="javascript:void(0);">家庭常备</a>
+                                            <i class="some-icon changwei"></i>
+                                        </div>
+                                        <div class="sec-left-guider-content">
+                                            <a href="javascript:void(0);">棉签</a>
+                                            <a href="javascript:void(0);">纱布</a>
+                                            <a href="javascript:void(0);">胶布</a>
+                                            <a href="javascript:void(0);">绷带</a>
+                                            <a href="javascript:void(0);">创口贴</a>
+                                            <a href="javascript:void(0);">消毒</a>
+                                        </div>
+                                    </li>
+                                    <li class="sec-content">
+                                        <div class="sec-left-guider">
+                                            <a href="javascript:void(0);">检测设备</a>
+                                            <i class="some-icon changwei"></i>
+                                        </div>
+                                        <div class="sec-left-guider-content">
+                                            <a href="javascript:void(0);">血压检测</a>
+                                            <a href="javascript:void(0);">血糖检测</a>
+                                            <a href="javascript:void(0);">体温检测</a>
+                                            <a href="javascript:void(0);">听诊器</a>
+                                            <a href="javascript:void(0);">体重脂肪测量仪</a></br>
+                                            <a href="javascript:void(0);">CFMS血小板聚集功能检测试剂盒</a>
+                                            <a href="javascript:void(0);">免疫缺陷病毒抗体</a>
+                                            <a href="javascript:void(0);">标准对数视力表灯</a>
+                                            <a href="javascript:void(0);">标准对数视力表灯</a>
+                                        </div>
+                                    </li>
+                                    <li class="sec-content">
+                                        <div class="sec-left-guider">
+                                            <a href="javascript:void(0);">助行器械</a>
+                                            <i class="some-icon changwei"></i>
+                                        </div>
+                                        <div class="sec-left-guider-content">
+                                            <a href="javascript:void(0);">轮椅</a>
+                                            <a href="javascript:void(0);">拐杖</a>
+                                            <a href="javascript:void(0);"> 助行器</a>
+                                            <a href="javascript:void(0);"> 接尿器</a>
+                                        </div>
+                                    </li>
+                                    <li class="sec-content">
+                                        <div class="sec-left-guider">
+                                            <a href="javascript:void(0);">康复理疗</a>
+                                            <i class="some-icon changwei"></i>
+                                        </div>
+                                        <div class="sec-left-guider-content">
+                                            <a href="javascript:void(0);">红外理疗</a>
+                                            <a href="javascript:void(0);">按摩系列</a>
+                                            <a href="javascript:void(0);">治疗仪器</a>
+                                            <a href="javascript:void(0);">足浴理疗</a>
+                                            <a href="javascript:void(0);">助听器</a>
+                                            <a href="javascript:void(0);">疝气治疗</a>
+                                            <a href="javascript:void(0);">矫姿</a></br>
+                                            <a href="javascript:void(0);">频谱理疗</a>
+                                            <a href="javascript:void(0);">磁场理疗</a>
+                                            <a href="javascript:void(0);">鼻腔护理</a>
+                                        </div>
+                                    </li>
+                                    <li class="sec-content">
+                                        <div class="sec-left-guider">
+                                            <a href="javascript:void(0);">中医器械</a>
+                                            <i class="some-icon changwei"></i>
+                                        </div>
+                                        <div class="sec-left-guider-content">
+                                            <a href="javascript:void(0);"> 针灸</a>
+                                            <a href="javascript:void(0);">拔罐</a>
+                                            <a href="javascript:void(0);">刮痧</a>
+                                        </div>
+                                    </li>
+                                    <li class="sec-content">
+                                        <div class="sec-left-guider">
+                                            <a href="javascript:void(0);"> 供氧器械</a>
+                                            <i class="some-icon changwei"></i>
+                                        </div>
+                                        <div class="sec-left-guider-content">
+                                            <a href="javascript:void(0);">制氧设备</a>
+                                            <a href="javascript:void(0);">供氧辅助器械</a>
+                                            <a href="javascript:void(0);">氧气袋</a>
+                                        </div>
+                                    </li>
+                                    <li class="sec-content">
+                                        <div class="sec-left-guider">
+                                            <a href="javascript:void(0);">外用贴膏</a>
+                                            <i class="some-icon changwei"></i>
+                                        </div>
+                                        <div class="sec-left-guider-content">
+                                            <a href="javascript:void(0);">降温退烧</a>
+                                            <a href="javascript:void(0);">风湿骨痛</a>
+                                            <a href="javascript:void(0);">妇科外用</a>
+                                            <a href="javascript:void(0);">五官外用</a>
+                                            <a href="javascript:void(0);">跌打损伤</a>
+                                            <a href="javascript:void(0);">晕车贴</a>
+                                            <a href="javascript:void(0);">医用敷料</a>
+                                        </div>
+                                    </li>
+                                    <li class="sec-content">
+                                        <div class="sec-left-guider">
+                                            <a href="javascript:void(0);">隐形眼镜</a>
+                                            <i class="some-icon changwei"></i>
+                                        </div>
+                                        <div class="sec-left-guider-content">
+                                            <a href="javascript:void(0);">隐形眼镜</a>
+                                            <a href="javascript:void(0);">美瞳彩片</a>
+                                            <a href="javascript:void(0);">周边护理</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sec-right">
+                                <ul class="factory-logo">
+                                    <li class="f-logo"><a href="javascript:void(0);"><img
+                                                src="img/index/zxyp-logo-1.png" alt=""></a></li>
+                                    <li class="f-logo"><a href="javascript:void(0);"><img
+                                                src="img/index/zxyp-logo-2.png" alt=""></a></li>
+                                    <li class="f-logo"><a href="javascript:void(0);"><img
+                                                src="img/index/zxyp-logo-3.png" alt=""></a></li>
+                                    <li class="f-logo"><a href="javascript:void(0);"><img
+                                                src="img/index/zxyp-logo-6.png" alt=""></a></li>
+                                </ul>
+                                <a href="javascript:void(0);" class="shenbao">
+                                    <img src="img/index/e9a48e9e-bda6-4ac6-a380-e2565c1e05391984.jpg" alt="">
+                                </a>
+                                <ul class="recommended-merchant">
+                                    <h6>推荐商家</h6>
+                                    <li><a href="javascript:void(0);"> 阜阳小松医药有限公司程集大药房111111111111</a></li>
+                                    <li><a href="javascript:void(0);"> 北京惠民泰康医药有限公司</a></li>
+                                    <li><a href="javascript:void(0);"> 吉林市龙潭区唐房大药房</a></li>
+                                    <li><a href="javascript:void(0);"> 鞍山市立山区今一康大药房</a></li>
+                                    <li><a href="javascript:void(0);"> 成都隆安堂大药房有限公</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- ======================================================== -->
+                    </div>
+                </li>
+                <li class=" t-nav home-page">
+                    <a href="javascript:void(0);">首页</a>
+                </li>
+                <li class="t-nav">
+                    <a href="javascript:void(0);">药品超市</a>
+                </li>
+                <li class="t-nav">
+                    <a href="javascript:void(0);">药房联盟</a>
+                </li>
+                <li class="t-nav">
+                    <a href="javascript:void(0);">医院大全</a>
+                </li>
+                <li class="t-nav">
+                    <a href="javascript:void(0);">医药资讯</a>
+                </li>
+                <li class="t-nav">
+                    <a href="javascript:void(0);">健康问答</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 轮播图部分 -->
+    <div class="banner">
+        <div class="container">
+            <div class="banner-center">
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/index/banner1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/index/banner2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/index/banner3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/index/banner4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/index/banner5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+                    <div class="swiper-button-next"></div>
+                    <!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
+                    <div class="swiper-pagination"></div>
+                    <!--分页器。如果放置在swiper-container外面，需要自定义样式。-->
+
+                    <!-- 缩略图 -->
+                    <div class="swiper-container gallery-thumbs" id='thumbs'>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide small-part special">
+                                <a class="banner-explain" href="javascript:void(0);">新人专享</a>
+                            </div>
+                            <div class="swiper-slide small-part">
+                                <a class="banner-explain" href="javascript:void(0);">一键包邮</a>
+                            </div>
+                            <div class="swiper-slide small-part">
+                                <a class="banner-explain" href="javascript:void(0);">上海现代制药</a>
+                            </div>
+                            <div class="swiper-slide small-part">
+                                <a class="banner-explain" href="javascript:void(0);">下载app 新客领20元抵用券</a>
+                            </div>
+                            <div class="swiper-slide small-part">
+                                <a class="banner-explain" href="javascript:void(0);">领券中心</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container botn-control">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide one"></div>
+                    <div class="swiper-slide two"></div>
+                    <div class="swiper-slide three"></div>
+                    <div class="swiper-slide four"></div>
+                    <div class="swiper-slide five"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="main">
+        <div class="container">
+            <!-- 限时购部分 -->
+            <div class="limit-gou">
+                <i class="xs-shopping"></i>
+                <h2 class="xs-title">限时购</h2>
+            </div>
+            <div class="xs-content">
+                <!-- 健胃消食片健胃消食片￥1.00万痛筋骨贴万痛筋骨贴￥6.00天然胶乳橡胶避孕套天然胶乳橡胶避孕套￥8.90风油精风油精￥5.00 -->
+                <ul>
+                    <li class="xs-list first-item">
+                        <a class="relative-msg" href="javascript:void(0);">
+                            <img src="img/index/app_download.png" alt="">
+                            <div class="this-name">维生素C含片</div>
+                            <div class="this-price">￥9.90</div>
+                        </a>
+                    </li>
+                    <li class="xs-list">
+                        <a class="relative-msg" href="javascript:void(0);">
+                            <img src="img/index/7190d5900386fa2f91e8b4be194271bd.jpg_300x300.jpg" alt="">
+                            <div class="this-name">维生素C含片</div>
+                            <div class="this-price">￥9.90</div>
+                        </a>
+                    </li>
+                    <li class="xs-list">
+                        <a class="relative-msg" href="javascript:void(0);">
+                            <img src="img/index/24bc1a1a-86af-4374-a29e-eb9406f576919948.jpg_300x300.jpg" alt="">
+                            <div class="this-name">维生素C含片</div>
+                            <div class="this-price">￥9.90</div>
+                        </a>
+                    </li>
+                    <li class="xs-list">
+                        <a class="relative-msg" href="javascript:void(0);">
+                            <img src="img/index/f534b7da-0b93-4bcd-9674-676a1641ffdf9882.jpg_300x300.jpg" alt="">
+                            <div class="this-name">维生素C含片</div>
+                            <div class="this-price">￥9.90</div>
+                        </a>
+                    </li>
+                    <li class="xs-list">
+                        <a class="relative-msg" href="javascript:void(0);">
+                            <img src="img/index/55488c1c-b45f-461f-809d-4e010df5197f6989.jpg_300x300.jpg" alt="">
+                            <div class="this-name">维生素C含片</div>
+                            <div class="this-price">￥9.90</div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- 限时购完 -->
+
+            <!-- 6层楼内容 -->
+            <div class="floor-content">
+                <!-- 第一层 -->
+                <div class="y-floor">
+                    <div class="floor-ceil">
+                        <div class="fc-left">
+                            <span>
+                                <i class="l">1</i>
+                                <i class="r">F</i>
+                            </span>
+                            <h2>中西药品<h2>
+                        </div>
+                        <div class="fc-right">
+                            <a href="javascript:void(0);">神经系统
+                            </a>
+                            <!-- <label for="">|</label> -->
+                            <a href="javascript:void(0);">呼吸系统
+                            </a>
+                            <!-- <label for="">|</label> -->
+                            <a href="javascript:void(0);">皮肤科室药
+                            </a>
+                            <!-- <label for="">|</label> -->
+                            <a href="javascript:void(0);">五官科药
+                            </a>
+                            <!-- <label for="">|</label> -->
+                            <a href="javascript:void(0);">心脑血管
+                            </a>
+                            <!-- <label for="">|</label> -->
+                            <a href="javascript:void(0);">肠胃用药
+                            </a>
+                            <!-- <label for="">|</label> -->
+                            <a href="javascript:void(0);">家庭常用
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="fl-drug">
+                        <div class="fl-drug-left">
+                            <div class="fl-drug-left-top">
+                                <!-- 小轮播图 -->
+                                <div class="swiper-container floor-carousel">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="img/index/82a087c17db46617b367b6666a9b0c53.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/index/d5c0f62e8311f832476370e216387afd.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            <div class="fl-drug-left-bottom">
+                                <a class="yao-logo" href="javascript:void(0);"><img src="img/index/zxyp-logo-1.png"
+                                        alt=""></a>
+                                <a class="yao-logo" href="javascript:void(0);"><img src="img/index/zxyp-logo-2.png"
+                                        alt=""></a>
+                                <a class="yao-logo" href="javascript:void(0);"><img src="img/index/zxyp-logo-3.png"
+                                        alt=""></a>
+                                <a class="yao-logo" href="javascript:void(0);"><img src="img/index/zxyp-logo-4.png"
+                                        alt=""></a>
+                                <a class="yao-logo" href="javascript:void(0);"><img src="img/index/zxyp-logo-5.png"
+                                        alt=""></a>
+                                <a class="yao-logo" href="javascript:void(0);"><img src="img/index/zxyp-logo-6.png"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <ul class="fl-drug-right">
+                            <!-- <li class="each-drug-item" data-id="1">
+                            <a class="goods-pic" href="javascript:void(0);">
+                                <img src="img/index/25f3a31a7f98115338461cd100ad3b10.jpg_300x300.jpg" alt="">
+                            </a>
+                            <a class="goods-title" href="javascript:void(0);">
+                                【鱼跃】臂式电子血压计"
+                            </a>
+                            <p class="goods-quantity">1台/盒</p>
+                            <p class="goods-price">￥234.00</p>
+                        </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- 第二层 -->
+                <div class="y-floor">
+                    <div class="floor-ceil">
+                        <div class="fc-left">
+                            <span>
+                                <i class="l">2</i>
+                                <i class="r">F</i>
+                            </span>
+                            <h2>养生保健<h2>
+                        </div>
+                        <div class="fc-right">
+                            <a href="javascript:void(0);">
+                            </a>
+                            <!-- <label for="">|</label> -->
+                            <a href="javascript:void(0);">
+                            </a>
+                            <!-- <label for="">|</label> -->
+                            <a href="javascript:void(0);">
+                            </a>
+                            <!-- <label for="">|</label> -->
+                            <a href="javascript:void(0);">
+                            </a>
+                            <!-- <label for="">|</label> -->
+                            <a href="javascript:void(0);">
+                            </a>
+                            <!-- <label for="">|</label> -->
+                            <a href="javascript:void(0);">
+                            </a>
+                            <!-- <label for="">|</label> -->
+                            <a href="javascript:void(0);">
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="fl-drug">
+                        <div class="fl-drug-left">
+                            <div class="fl-drug-left-top">
+                                <!-- 小轮播图 -->
+                                <div class="swiper-container floor-carousel">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="img/index/82a087c17db46617b367b6666a9b0c53.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/index/d5c0f62e8311f832476370e216387afd.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            <div class="fl-drug-left-bottom">
+                                <a class="yao-logo" href="javascript:void(0);"><img src="img/index/ysbj-logo-1.png"
+                                        alt=""></a>
+                                <a class="yao-logo" href="javascript:void(0);"><img src="img/index/ysbj-logo-2.png"
+                                        alt=""></a>
+                                <a class="yao-logo" href="javascript:void(0);"><img src="img/index/ysbj-logo-3.png"
+                                        alt=""></a>
+                                <a class="yao-logo" href="javascript:void(0);"><img src="img/index/ysbj-logo-4.png"
+                                        alt=""></a>
+                                <a class="yao-logo" href="javascript:void(0);"><img src="img/index/ysbj-logo-5.png"
+                                        alt=""></a>
+                                <a class="yao-logo" href="javascript:void(0);"><img src="img/index/ysbj-logo-6.png"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <ul class="f2-fl-drug-right">
+                            <li class="each-drug-item" data-id="1">
+                                <a class="goods-pic" href="javascript:void(0);">
+                                    <img src="img/index/f2-1.jpg" alt="">
+                                </a>
+                                <a class="goods-title" href="javascript:void(0);">
+                                    【鱼跃】臂式电子血压计"
+                                </a>
+                                <p class="goods-quantity">1台/盒</p>
+                                <p class="goods-price">￥234.00</p>
+                            </li>
+                            <li class="each-drug-item" data-id="1">
+                                <a class="goods-pic" href="javascript:void(0);">
+                                    <img src="img/index/f2-2.jpg" alt="">
+                                </a>
+                                <a class="goods-title" href="javascript:void(0);">
+                                    【鱼跃】臂式电子血压计"
+                                </a>
+                                <p class="goods-quantity">1台/盒</p>
+                                <p class="goods-price">￥234.00</p>
+                            </li>
+                            <li class="each-drug-item" data-id="1">
+                                <a class="goods-pic" href="javascript:void(0);">
+                                    <img src="img/index/f2-3.jpg" alt="">
+                                </a>
+                                <a class="goods-title" href="javascript:void(0);">
+                                    【鱼跃】臂式电子血压计"
+                                </a>
+                                <p class="goods-quantity">1台/盒</p>
+                                <p class="goods-price">￥234.00</p>
+                            </li>
+                            <li class="each-drug-item" data-id="1">
+                                <a class="goods-pic" href="javascript:void(0);">
+                                    <img src="img/index/f2-4.jpg" alt="">
+                                </a>
+                                <a class="goods-title" href="javascript:void(0);">
+                                    【鱼跃】臂式电子血压计"
+                                </a>
+                                <p class="goods-quantity">1台/盒</p>
+                                <p class="goods-price">￥234.00</p>
+                            </li>
+                            <li class="each-drug-item" data-id="1">
+                                <a class="goods-pic" href="javascript:void(0);">
+                                    <img src="img/index/f2-5.jpg" alt="">
+                                </a>
+                                <a class="goods-title" href="javascript:void(0);">
+                                    【鱼跃】臂式电子血压计"
+                                </a>
+                                <p class="goods-quantity">1台/盒</p>
+                                <p class="goods-price">￥234.00</p>
+                            </li>
+                            <li class="each-drug-item" data-id="1">
+                                <a class="goods-pic" href="javascript:void(0);">
+                                    <img src="img/index/f2-6.jpg" alt="">
+                                </a>
+                                <a class="goods-title" href="javascript:void(0);">
+                                    【鱼跃】臂式电子血压计"
+                                </a>
+                                <p class="goods-quantity">1台/盒</p>
+                                <p class="goods-price">￥234.00</p>
+                            </li>
+                            <li class="each-drug-item" data-id="1">
+                                <a class="goods-pic" href="javascript:void(0);">
+                                    <img src="img/index/f2-7.jpg" alt="">
+                                </a>
+                                <a class="goods-title" href="javascript:void(0);">
+                                    【鱼跃】臂式电子血压计"
+                                </a>
+                                <p class="goods-quantity">1台/盒</p>
+                                <p class="goods-price">￥234.00</p>
+                            </li>
+                            <li class="each-drug-item" data-id="1">
+                                <a class="goods-pic" href="javascript:void(0);">
+                                    <img src="img/index/f2-8.jpg" alt="">
+                                </a>
+                                <a class="goods-title" href="javascript:void(0);">
+                                    【鱼跃】臂式电子血压计"
+                                </a>
+                                <p class="goods-quantity">1台/盒</p>
+                                <p class="goods-price">￥234.00</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 还没看够部分 -->
+
+            <div class="read-more-title">
+                <div class="hmkg">还没看够</div>
+                <span class="tx-l-line"></span>
+                <span class="tx-r-line"></span>
+            </div>
+
+            <div class="read-more-container">
+                <div class="read-item">
+                    <a class="read-pic" href="javascript:void(0);"><img
+                            src="img/index/ae86331d360359f6ea8a9e3e73dfee29.jpg_300x300.jpg" alt=""></a>
+                    <a class="read-title">【万通】万通筋骨贴</a>
+                    <a class="read-price">￥13.30</a>
+                </div>
+                <div class="read-item">
+                    <a class="read-pic" href="javascript:void(0);"><img
+                            src="img/index/d6348477-6e33-42dc-8a7d-80e8abafe14d3183.jpg_300x300" alt=""></a>
+                    <a class="read-title">【万通】万通筋骨贴</a>
+                    <a class="read-price">￥13.30</a>
+                </div>
+                <div class="read-item">
+                    <a class="read-pic" href="javascript:void(0);"><img
+                            src="img/index/c8da3754-3115-442b-8b2b-428e268eb8e64446.jpg_300x300" alt=""></a>
+                    <a class="read-title">【万通】万通筋骨贴</a>
+                    <a class="read-price">￥13.30</a>
+                </div>
+                <div class="read-item">
+                    <a class="read-pic" href="javascript:void(0);"><img
+                            src="img/index/d971ecc6fa48ab3c305085a8848fcc98.jpg_300x300" alt=""></a>
+                    <a class="read-title">【万通】万通筋骨贴</a>
+                    <a class="read-price">￥13.30</a>
+                </div>
+                <div class="read-item">
+                    <a class="read-pic" href="javascript:void(0);"><img
+                            src="img/index/95c7ca07-b762-4dcd-a359-8ca6f47192675801.jpg_300x300" alt=""></a>
+                    <a class="read-title">【万通】万通筋骨贴</a>
+                    <a class="read-price">￥13.30</a>
+                </div>
+                <div class="read-item">
+                    <a class="read-pic" href="javascript:void(0);"><img
+                            src="img/index/de55a3e5-13b7-43fe-a881-c5b7b2162f1c6173.jpg_300x300" alt=""></a>
+                    <a class="read-title">【万通】万通筋骨贴</a>
+                    <a class="read-price">￥13.30</a>
+                </div>
+                <div class="read-item">
+                    <a class="read-pic" href="javascript:void(0);"><img
+                            src="img/index/5422a16e136a78998b4249923aadae7a.jpg_300x300" alt=""></a>
+                    <a class="read-title">【万通】万通筋骨贴</a>
+                    <a class="read-price">￥13.30</a>
+                </div>
+                <div class="read-item">
+                    <a class="read-pic" href="javascript:void(0);"><img
+                            src="img/index/0c32f8b6-63a1-43f6-a7e1-2024e56f1cfd5792.jpg_300x300" alt=""></a>
+                    <a class="read-title">【万通】万通筋骨贴</a>
+                    <a class="read-price">￥13.30</a>
+                </div>
+                <div class="read-item">
+                    <a class="read-pic" href="javascript:void(0);"><img
+                            src="img/index/e446e0c5975f9abed8af0442268bacf3.jpg_300x300" alt=""></a>
+                    <a class="read-title">【万通】万通筋骨贴</a>
+                    <a class="read-price">￥13.30</a>
+                </div>
+                <div class="read-item">
+                    <a class="read-pic" href="javascript:void(0);"><img
+                            src="img/index/192662d7-34d1-4991-95cf-bc164b716b4d8235.jpg_300x300" alt=""></a>
+                    <a class="read-title">【万通】万通筋骨贴</a>
+                    <a class="read-price">￥13.30</a>
+                </div>
+                <div class="read-item">
+                    <a class="read-pic" href="javascript:void(0);"><img
+                            src="img/index/edaab2ed4f011b02041abbc32913aae2.jpg_300x300" alt=""></a>
+                    <a class="read-title">【万通】万通筋骨贴</a>
+                    <a class="read-price">￥13.30</a>
+                </div>
+                <div class="read-item">
+                    <a class="read-pic" href="javascript:void(0);"><img
+                            src="img/index/3c927c2543d53c65c16e850315776c69.jpg_300x300" alt=""></a>
+                    <a class="read-title">【万通】万通筋骨贴</a>
+                    <a class="read-price">￥13.30</a>
+                </div>
+            </div>
+            <!-- 还没看够部分完 -->
+            <div class="new-client">
+                <!-- 新人专享部分 -->
+                <a class="have" href="javascript:void(0);">
+                    <img src="img/index/53e3c21e8cd91256e9c7e07495bc31ff.png" alt="">
+                    <img class="ads" src="img/index/gg.png" alt="">
+                </a>
+            </div>
+
+            <!-- 资讯部分 -->
+            <div class="news-list clearfix">
+                <!-- -------------------------------------------------------- -->
+                <div class="news">
+                    <div class="new-title clearfix">
+                        <h4>最新咨询-</h4>
+                        <a class="click-more" href="">更多>></a>
+                    </div>
+                    <div class="first-headline">
+                        <a class="n-l" href="javascript:void(0);">
+                            <img src="img/index/nophoto.png" alt="">
+                        </a>
+
+                        <div class="n-r">
+                            <a class="story-question" href="javascript:void(0);">
+                                <b class="emphasis">[ 识药辨药 ]</b>
+                                药品为什么分颗粒、胶囊和片状
+                            </a>
+                            <p class="story">我们都知道，一旦得病了就得用药治疗。如果感冒了，有的人会吃颗粒的“感冒...</p>
+                        </div>
+                    </div>
+
+                    <ul class="sec-headline">
+                        <li>
+                            <a href="javascript:void(0);">
+                                <b>[ 运动减肥 ]</b>
+                                剧烈运动之后要注意哪些事情
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <b>[ 明星减肥 ]</b>
+                                如何有效减肥，有效减肥的方法
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <b>[ 饮食误区 ]</b>
+                                维生素A、B、C、D、E，了解一下
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <b>[ 饮食误区 ]</b>
+                                荔枝病是什么，如何预防和治疗
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ---------------------------------------------------- -->
+                <div class="news gap">
+                    <div class="new-title clearfix">
+                        <h4>最新咨询-</h4>
+                        <a class="click-more" href="">更多>></a>
+                    </div>
+                    <div class="first-headline">
+                        <a class="n-l" href="javascript:void(0);">
+                            <img src="img/index/nophoto.png" alt="">
+                        </a>
+
+                        <div class="n-r">
+                            <a class="story-question" href="javascript:void(0);">
+                                <b class="emphasis">[ 药品导购 ]</b>
+                                万通筋骨贴价格贵吗 10贴的
+                            </a>
+                            <p class="story">万通筋骨贴目前市面上有两种规格，一种是7cmX10cmX6贴/盒，另外...</p>
+                        </div>
+                    </div>
+
+                    <ul class="sec-headline">
+                        <li>
+                            <a href="javascript:void(0);">
+                                <b>[ 关爱孕妇 ]</b>
+                                自然分娩全过程　顺产图片
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <b>[ 妇科 ]</b>
+                                女性真人外阴实图 女性阴唇的作用
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <b>[ 男科 ]</b>
+                                男性阴茎快速勃起的方法有哪些？四招方法让你的男票快速勃起
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <b>[ 呼吸系统 ]</b>
+                                磷酸奥司他韦胶囊价格贵吗 10粒的多少钱一盒？
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- -------------------------------------------------- -->
+
+                <div class="news lyb">
+                    <div class="new-title clearfix">
+                        <h4>最新咨询-</h4>
+                        <a class="click-more" href="">更多>></a>
+                    </div>
+                    <div class="first-headline">
+                        <a class="n-l" href="javascript:void(0);">
+                            <img src="img/index/nophoto.png" alt="">
+                        </a>
+
+                        <div class="n-r">
+                            <a class="story-question" href="javascript:void(0);">
+                                <b class="emphasis">[ 药品导购 ]</b>
+                                万通筋骨贴价格贵吗 10贴的
+                            </a>
+                            <p class="story">万通筋骨贴目前市面上有两种规格，一种是7cmX10cmX6贴/盒，另外...</p>
+                        </div>
+                    </div>
+
+                    <ul class="sec-headline">
+                        <li>
+                            <a href="javascript:void(0);">
+                                <b>[ 关爱孕妇 ]</b>
+                                自然分娩全过程　顺产图片
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <b>[ 妇科 ]</b>
+                                女性真人外阴实图 女性阴唇的作用
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <b>[ 男科 ]</b>
+                                男性阴茎快速勃起的方法有哪些？四招方法让你的男票快速勃起
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <b>[ 呼吸系统 ]</b>
+                                磷酸奥司他韦胶囊价格贵吗 10粒的多少钱一盒？
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ---------------------------- -->
+            </div>
+
+            <!-- 链接选项卡部分 -->
+
+            <div class="links">
+                <!-- 导航 -->
+                <div class="link-nav">
+                    <ul class="tab_bottom  clearfix">
+                        <li class="tab_hot_goods link-in-active">
+                            <a href="javascript:void(0);">热门商品</a>
+                        </li>
+                        <li class="tab_friendLink">
+                            <a href="javascript:void(0);">友情链接</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 内容 -->
+                <div class="all-join-in-webside">
+                    <div class="those-web clearfix">
+                        <a href="javascript:void(0);" title="维萃">维萃</a>
+                        <a href="javascript:void(0);" title="夜宁糖浆">夜宁糖浆</a>
+                        <a href="javascript:void(0);" title="白云山">白云山</a>
+                        <a href="javascript:void(0);" title="辅仁">辅仁</a>
+                        <a href="javascript:void(0);" title="善存">善存</a>
+                        <a href="javascript:void(0);" title="聚维酮碘栓">聚维酮碘栓</a>
+                        <a href="javascript:void(0);" title="邮船">邮船</a>
+                        <a href="javascript:void(0);" title="晶珠">晶珠</a>
+                        <a href="javascript:void(0);" title="红珊瑚">红珊瑚</a>
+                        <a href="javascript:void(0);" title="石榴健胃胶囊">石榴健胃胶囊</a>
+                        <a href="javascript:void(0);" title="仁和">仁和</a>
+                        <a href="javascript:void(0);" title="复方板蓝根颗粒">复方板蓝根颗粒</a>
+                        <a href="javascript:void(0);" title="优克">优克</a>
+                        <a href="javascript:void(0);" title="小儿健胃糖浆">小儿健胃糖浆</a>
+                        <a href="javascript:void(0);" title="桂龍">桂龍</a>
+                        <a href="javascript:void(0);" title="薄荷护表油">薄荷护表油</a>
+                        <a href="javascript:void(0);" title="康恩贝">康恩贝</a>
+                        <a href="javascript:void(0);" title="汤臣倍健">汤臣倍健</a>
+                        <a href="javascript:void(0);" title="步長">步長</a>
+                        <a href="javascript:void(0);" title="太极">太极</a>
+                        <a href="javascript:void(0);" title="修正">修正</a>
+                        <a href="javascript:void(0);" title="万通">万通</a>
+                        <a href="javascript:void(0);" title="灵芝糖浆">灵芝糖浆</a>
+                        <a href="javascript:void(0);" title="万特力">万特力</a>
+                        <a href="javascript:void(0);" title="葵花">葵花</a>
+                        <a href="javascript:void(0);" title="香附丸">香附丸</a>
+                        <a href="javascript:void(0);" title="修正堂">修正堂</a>
+                    </div>
+                    <div class="those-web clearfix">
+                        <a href="javascript:void(0);">药品大全</a>
+                        <a href="javascript:void(0);">360好药</a>
+                        <a href="javascript:void(0);">中国卫生人才网</a>
+                        <a href="javascript:void(0);">八百方网上药店</a>
+                        <a href="javascript:void(0);">百姓阳光大药房</a>
+                        <a href="javascript:void(0);">中国医药联盟</a>
+                        <a href="javascript:void(0);">北京兴事堂药店</a>
+                        <a href="javascript:void(0);">求医网</a>
+                        <a href="javascript:void(0);">21药店</a>
+                        <a href="javascript:void(0);">中华中医网</a>
+                        <a href="javascript:void(0);">药品资讯网</a>
+                        <a href="javascript:void(0);">中药大全</a>
+                        <a href="javascript:void(0);">名医汇</a>
+                        <a href="javascript:void(0);">康之家网上药店</a>
+                        <a href="javascript:void(0);">携程攻略社区</a>
+                        <a href="javascript:void(0);">网上药店</a>
+                        <a href="javascript:void(0);">中医网站</a>
+                        <a href="javascript:void(0);">药品库</a>
+                        <a href="javascript:void(0);">健康知识</a>
+                        <a href="javascript:void(0);">39饮食</a>
+                        <a href="javascript:void(0);">爱问中医</a>
+                        <a href="javascript:void(0);">健身吧</a>
+                        <a href="javascript:void(0);">中药材</a>
+                        <a href="javascript:void(0);">中草药网</a>
+                        <a href="javascript:void(0);">久久养生网</a>
+                        <a href="javascript:void(0);">医药招商</a>
+                        <a href="javascript:void(0);">快易捷药品网</a>
+                        <a href="javascript:void(0);">整形美容</a>
+                        <a href="javascript:void(0);">39药品通</a>
+                        <a href="javascript:void(0);">天天营养</a>
+                        <a href="javascript:void(0);">备孕</a>
+                        <a href="javascript:void(0);">健康一线</a>
+                        <a href="javascript:void(0);">网上药店</a>
+                        <a href="javascript:void(0);">中国医疗人才网</a>
+                        <a href="javascript:void(0);">养生保健</a>
+                        <a href="javascript:void(0);">保健品网上商城</a>
+                        <a href="javascript:void(0);">中西药品</a>
+                        <a href="javascript:void(0);">医疗器械</a>
+                        <a href="javascript:void(0);">养身保健</a>
+                        <a href="javascript:void(0);">计生用品</a>
+                        <a href="javascript:void(0);">中药饮片</a>
+                        <a href="javascript:void(0);">美容护肤</a>
+                        <a href="javascript:void(0);">养生之道</a>
+                        <a href="javascript:void(0);">健康百科</a>
+                        <a href="javascript:void(0);">医药问答</a>
+                        <a href="javascript:void(0);">心理咨询</a>
+                        <a href="javascript:void(0);">导医网</a>
+                        <a href="javascript:void(0);">美莱整形</a>
+                        <a href="javascript:void(0);">微整形</a>
+                        <a href="javascript:void(0);">药智网</a>
+                        <a href="javascript:void(0);">飞华问答</a>
+                        <a href="javascript:void(0);">伊顿健康</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 链接选项卡完 -->
+
+
+
+        </div>
+    </div>
+    <!-- 底部部分 -->
+    <div class="footer">
+        <div class="user-guidance">
+            <div class="container">
+                <dl>
+                    <dt>消费者保障</dt>
+                    <dd>
+                        <a href="#">网购警示</a>
+                        <a href="#">隐私保护</a>
+                        <a href="#">投诉维权</a>
+                        <a href="#">客服中心</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>新手帮助</dt>
+                    <dd>
+                        <a href="#">用户注册</a>
+                        <a href="#">商品搜索</a>
+                        <a href="#">微信查药</a>
+                        <a href="#">订单状态</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd>
+                        <a href="#">物流配送</a>
+                        <a href="#">运费说明</a>
+                        <a href="#">门店送货</a>
+                        <a href="#" target="_blank">验收标准</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd>
+                        <a href="#" target="_blank">支付宝</a>
+                        <a href="#" target="_blank" style="display:none;">货到付款</a>
+                        <a href="#" target="_blank">银联支付</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>
+                        <a href="#" target="_blank">退换货保障</a>
+                        <a href="#" target="_blank">发票制度</a>
+                        <a href="#" target="_blank">退款说明</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>商家合作</dt>
+                    <dd>
+                        <a href="#" target="_blank">商家入驻</a>
+                        <a href="#" target="_blank">厂家入驻</a>
+                    </dd>
+                </dl>
+                <dl class="mr20">
+                    <dt class="txt-center">手机APP</dt>
+                    <dd class="txt-center">
+                        <a href="#" class="qr txt-center" target="_blank"><img src="img/index/app80.png"
+                                alt="药房网商城APP，买药更方便"></a>
+                        新人领20元礼包
+                    </dd>
+                </dl>
+                <dl class="last">
+                    <dt class="txt-center">关注微信</dt>
+                    <dd class="txt-center">
+                        <a href="#" class="qr txt-center" target="_blank"><img src="img/index/wxsmall.png"
+                                alt="微信查药比价，网上购买更方便"></a>
+                        每日签到领积分
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p class="white">
+                    <a class="first" href="#">关于我们</a> | <a href="#">资质证书</a> | <a href="#">商家入驻</a> | <a
+                        href="#">联系我们</a> | <a href="#">广告联盟</a> |
+                    <a href="#">工作机会</a> | <a href="#">帮助中心</a> | <a href="#">法律声明</a> | <a href="#">网站地图</a> | <a
+                        href="#">在售商品</a> | <a href="#">下架商品</a> | <a href="#">商品索引</a> | <a href="#">商品分类</a> | <a
+                        href="#">热门搜索</a>
+                </p>
+                <p class="white">
+                    href="#">医院大全</a> | <a href="#">热门资讯</a> | <a href="#">产品目录</a> | <a href="#">品牌大全</a> | <a
+                        href="#">疾病用药</a> | <a href="#">症状用药</a> | <a href="#">药品库</a>
+                </p>
+                <p class="zz clearfix">
+                    <span class="mr">互联网药品信息服务资格证编号：<a href="#">(沪)-经营性-2017-0003</a></span>
+                    href="#">ICP备案号：沪ICP备07012885号</a></span><span class="gaba"><img
+                            src="https://c1.yaofangwang.net/common/images/gaba.png"><a href="#">沪公网安备
+                            31011502002155号</a></span><span class="mr">（沪）网械平台备字[2018]第00001号</span><span
+                        class="mr">增值电信业务经营许可证编号：<a href="#">沪B2-20170392</a></span>
+                </p>
+                <p class="copy">
+                    ©2007-2019 药房网商城版权所有 上海伊邦医药信息科技有限公司
+                </p>
+                <div class="cert clearfix">
+                    <span class="icon gs"><a href="#"></a></span>
+                    <span class="icon bj"></span>
+                    <span class="icon ba"></span>
+                    <span class="icon ls"></span>
+                    <span class="icon zx"></span>
+                    <span class="icon cx"><a></a></span>
+                    <span class="icon al"><a></a></span>
+                    <span class="icon sw"><a></a></span>
+                    <span class="icon rd"><a></a></span>
+                </div>
+                <p class="font">
+                    本网站用字经北京北大方正电子有限公司授权许可
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

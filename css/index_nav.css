@@ -1,0 +1,269 @@
+.nav {
+  background: #ffffff;
+}
+.nav .container .horizontal-nav {
+  height: 50px;
+}
+.nav .container .horizontal-nav .t-nav {
+  float: left;
+  color: #fff;
+  background: #ffffff;
+  text-align: center;
+  width: 124px;
+  line-height: 50px;
+}
+.nav .container .horizontal-nav .t-nav a {
+  color: #fff;
+  font-size: 16px;
+  color: #333333;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+}
+.nav .container .horizontal-nav .t-nav a:hover {
+  color: #0cb95f;
+  text-decoration: underline;
+}
+.nav .container .horizontal-nav .category {
+  padding-left: 20px;
+  box-sizing: border-box;
+  background: #0cb95f;
+  width: 230px;
+  position: relative;
+  text-align: left;
+}
+.nav .container .horizontal-nav .category a {
+  color: #ffffff;
+}
+.nav .container .horizontal-nav .category .vertical-nav {
+  display: none;
+  height: 390px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  z-index: 2000;
+}
+.nav .container .horizontal-nav .category .vertical-nav .v-nav {
+  width: 230px;
+  height: 65px;
+  padding: 9px 0 10px 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  border-bottom: 1px dashed #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+.nav .container .horizontal-nav .category .vertical-nav .v-nav .icon-left {
+  float: left;
+  width: 48px;
+}
+.nav .container .horizontal-nav .category .vertical-nav .v-nav .icon-left i {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+}
+.nav .container .horizontal-nav .category .vertical-nav .v-nav .icon-left .med-zy {
+  background-position: -132px -154px;
+}
+.nav .container .horizontal-nav .category .vertical-nav .v-nav .icon-left .med-zx {
+  background-position: -156px -154px;
+}
+.nav .container .horizontal-nav .category .vertical-nav .v-nav .icon-left .med-ys {
+  background-position: -180px -154px;
+}
+.nav .container .horizontal-nav .category .vertical-nav .v-nav .icon-left .med-js {
+  background-position: -204px -154px;
+}
+.nav .container .horizontal-nav .category .vertical-nav .v-nav .icon-left .med-zy {
+  background-position: -252px -154px;
+}
+.nav .container .horizontal-nav .category .vertical-nav .v-nav .icon-left .med-mr {
+  background-position: -228px -154px;
+}
+.nav .container .horizontal-nav .category .vertical-nav .v-nav .content-right {
+  float: left;
+  width: 180px;
+}
+.nav .container .horizontal-nav .category .vertical-nav .v-nav h2 {
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  line-height: 19px;
+  text-align: left;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+.nav .container .horizontal-nav .category .vertical-nav .v-nav h2 a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+}
+.nav .container .horizontal-nav .category .vertical-nav .v-nav .classification {
+  display: inline;
+}
+.nav .container .horizontal-nav .category .vertical-nav .v-nav .classification a {
+  display: block;
+  float: left;
+  color: #999;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+.nav .container .horizontal-nav .category .vertical-nav .v-nav a {
+  color: #333;
+}
+.nav .container .horizontal-nav .category .home-page {
+  width: 132px;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 100%;
+  z-index: 222222;
+  width: 758px;
+  background: #f4f4f4;
+  border: 1px solid #e5e5e5;
+  min-height: 389px;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-left {
+  float: left;
+  width: 520px;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-left .sec-content {
+  width: 100%;
+  min-height: 45px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed #e5e5e5;
+  overflow: hidden;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-left .sec-content .sec-left-guider {
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 20px;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-left .sec-content .sec-left-guider a {
+  background: #0cb95f;
+  font-size: 12px;
+  color: #fff;
+  height: 20px;
+  line-height: 20px;
+  display: block;
+  width: 73px;
+  float: left;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-left .sec-content .sec-left-guider a:hover {
+  text-decoration: none;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-left .sec-content .sec-left-guider .some-icon {
+  background-color: #0aa454;
+  display: block;
+  height: 20px;
+  width: 17px;
+  background-position: -14px -21px;
+  float: right;
+  margin: 0;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-left .sec-content .sec-left-guider-content {
+  padding-top: 10px;
+  padding-bottom: 0;
+  text-align: left;
+  margin-top: -4px;
+  float: left;
+  line-height: 25px;
+  width: 395px;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-left .sec-content .sec-left-guider-content a {
+  padding: 5px 8px;
+  text-indent: 8px;
+  font-size: 12px;
+  color: #999;
+  word-spacing: 25px;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-left .sec-content .sec-left-guider-content a:hover {
+  color: #0cb95f;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-left .sec-content .sec-left-guider-content #all-goods-classification:hover {
+  color: #ffffff;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-right {
+  float: right;
+  width: 169px;
+  margin-right: 20px;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-right .factory-logo {
+  overflow: hidden;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-right ul {
+  margin-top: 15px;
+  overflow: hidden;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-right ul .f-logo {
+  float: left;
+  box-sizing: border-box;
+  margin: 0 0 4px 4px;
+  border: 1px solid #eaeaea;
+  width: 80px;
+  height: 40px;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-right ul .f-logo:nth-child(odd) {
+  margin: 0 4px 4px 0;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-right ul .f-logo:nth-child(even) {
+  margin: 0 0 4px 4px;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-right ul .f-logo img {
+  width: 80px;
+  height: 40px;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-right .shenbao {
+  width: 166px;
+  height: 120px;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-right .shenbao img {
+  width: 100%;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-right .recommended-merchant {
+  width: 100%;
+  margin-bottom: 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-right .recommended-merchant h6 {
+  padding-left: 20px;
+  font-size: 12px;
+  color: #666;
+  border-bottom: 1px dashed #e5e5e5;
+  height: 28px;
+  line-height: 28px;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-right .recommended-merchant li {
+  list-style: disc;
+  line-height: 12px;
+  width: 100%;
+  line-height: 28px;
+  height: 28px;
+  border: none;
+  margin: 0;
+  text-align: left;
+  padding-left: 20px;
+  background: url(../img/index/icons.png) no-repeat;
+  background-position: -490px -260px;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-right .recommended-merchant li a {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: left;
+  font-size: 12px;
+  color: #999;
+  margin-right: 20px;
+}
+.nav .container .horizontal-nav .category .sec-nav-box .secondary-navigation .sec-right .recommended-merchant li a:hover {
+  color: #0aa454;
+  text-decoration: underline;
+}

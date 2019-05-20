@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #333;
+    font-size: 12px;
+    font-family: Arial, "宋体", Tahoma, Verdana, sans-serif, simsun;
+
+}
+
+input {
+    outline: 0;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix::after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    content: " ";
+    font-size: 0;
+}
+
+ul {
+    li {
+        list-style: none;
+    }
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    outline-style: none;
+
+    &:hover {
+        color: #0cb95f;
+        text-decoration: underline;
+    }
+
+    // 防止a标签被选中
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+
+div {
+    height: auto;
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    content: " ";
+    font-size: 0;
+}
+
+.clear-float {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.navheight {
+    height: 50px;
+    line-height: 50px;
+}
+
+.clearborder {
+    padding: 0;
+    margin: 0;
+}
+
+.xs-go {
+    transform: scale(1.1);
+    transition: all .4s ease;
+}
+
+body:extend(.clearborder) {
+    color: #333;
+    font-size: 12px;
+    font-family: Arial, "宋体", Tahoma, Verdana, sans-serif, simsun;
+    line-height: 1.5em;
+}
+
+.breadcrumb {
+    padding: 0;
+    min-height: 24px;
+    color: #aaa;
+    text-align: left;
+    line-height: 24px;
+
+    a {
+        float: left;
+        display: block;
+    }
+
+    i {
+        float: left;
+        display: block;
+        margin: 3px 12px 0;
+        width: 8px;
+        height: 18px;
+        background: url("../img/index/icons.png")no-repeat;
+        background-position: -30px -23px;
+    }
+
+    strong {
+        color: #666;
+        font-weight: normal;
+    }
+}
+
+.icons {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url("../img/index/icons.png")no-repeat;
+    background-position: -123px 0;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

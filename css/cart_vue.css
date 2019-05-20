@@ -1,0 +1,144 @@
+table {
+  width: 1200px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 15px;
+}
+td {
+  padding: 15px 0;
+  border-bottom: 1px dotted #ddd;
+}
+.w1 {
+  width: 50px;
+}
+.w1 .ck {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-position: -41px -25px;
+  vertical-align: middle;
+  position: relative;
+  background-image: url("../img/index/icons.png");
+}
+.w1 .ck .checked {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-position: -60px -25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../img/index/icons.png");
+}
+.w2 {
+  width: 100px;
+}
+.w2 a {
+  border: 1px solid #e5e5e5;
+  display: block;
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+.w2 a img {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+}
+.w3 a {
+  line-height: 20px;
+}
+.w3 a .icon_rx_dw {
+  display: inline-block;
+  width: 32px;
+  height: 18px;
+  background: url(../img/index/icons.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+.w3 a .fl {
+  float: left;
+}
+.w3 a strong {
+  float: left;
+  font-weight: normal;
+  font-size: 12px;
+  width: 440px;
+}
+.w3 p {
+  color: #999;
+  line-height: 22px;
+}
+.w4 {
+  width: 100px;
+  text-align: right;
+  padding-right: 50px;
+}
+.w4 .money2 {
+  color: #333;
+  font-style: normal;
+  font-family: Arial;
+}
+.w5 {
+  width: 130px;
+  text-align: center;
+}
+.w5 .quantity {
+  float: none;
+  float: left;
+  display: block;
+  width: 90px;
+  height: 22px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 22px;
+}
+.w5 .quantity a {
+  float: left;
+  display: inline-block;
+  width: 24px;
+  height: 22px;
+  background-color: #fff;
+  background-image: url("../img/index/icons.png");
+  text-decoration: none;
+  line-height: 22px;
+}
+.w5 .quantity .sub {
+  background-position: -165px -79px;
+}
+.w5 .quantity input {
+  float: left;
+  width: 40px;
+  height: 22px;
+  border: 0;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-align: center;
+  font-family: Arial;
+  line-height: 22px;
+}
+.w5 .quantity .add {
+  background-position: -192px -79px;
+}
+.w6 {
+  width: 100px;
+  text-align: right;
+  padding-right: 30px;
+}
+.w6 .money {
+  color: #e50000;
+  font-style: normal;
+  font-family: Arial;
+}
+.w7 {
+  width: 120px;
+  text-align: right;
+  padding-right: 30px;
+}
+.w7 a {
+  color: #999;
+  margin-left: 15px;
+}

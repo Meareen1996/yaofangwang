@@ -1,0 +1,348 @@
+// 横导航栏
+@fontSize: #333;
+
+.nav {
+    background: #ffffff;
+
+    .container {
+
+        .horizontal-nav {
+            height: 50px;
+
+
+            .t-nav:extend(.navheight) {
+                float: left;
+                color: #fff;
+                background: #ffffff;
+                text-align: center;
+                width: 124px;
+                line-height: 50px;
+
+                a {
+                    color: #fff;
+                    font-size: 16px;
+                    color: @fontSize;
+                    font-family: "\5FAE\8F6F\96C5\9ED1";
+
+                    &:hover {
+                        color: #0cb95f;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .category {
+                padding-left: 20px;
+                box-sizing: border-box;
+                background: #0cb95f;
+                width: 230px;
+                text-align: left;
+                position: relative;
+                text-align: left;
+
+                a {
+                    color: #ffffff;
+                }
+
+                // 竖导航栏
+                .vertical-nav {
+                    display: none;
+                    height: 390px;
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 50px;
+                    z-index: 2000;
+
+                    .v-nav {
+                        width: 230px;
+                        height: 65px;
+                        padding: 9px 0 10px 0;
+                        box-sizing: border-box;
+                        background-color: rgb(244, 244, 244);
+                        border-bottom: 1px dashed #e5e5e5;
+                        border-left: 1px solid #e5e5e5;
+                        border-right: 1px solid #e5e5e5;
+
+
+                        .icon-left {
+                            float: left;
+                            width: 48px;
+
+                            i {
+                                width: 24px;
+                                height: 24px;
+                                margin-left: 12px;
+                            }
+
+                            .med-zy {
+                                background-position: -132px -154px;
+                            }
+
+                            .med-zx {
+                                background-position: -156px -154px;
+                            }
+
+                            .med-ys {
+                                background-position: -180px -154px;
+                            }
+
+                            .med-js {
+                                background-position: -204px -154px;
+                            }
+
+                            .med-zy {
+                                background-position: -252px -154px;
+                            }
+
+                            .med-mr {
+                                background-position: -228px -154px;
+                            }
+                        }
+
+                        .content-right {
+                            float: left;
+                            width: 180px;
+                            ;
+                        }
+
+                        h2 {
+                            font-family: "\5FAE\8F6F\96C5\9ED1";
+                            line-height: 19px;
+                            text-align: left;
+                            margin-bottom: 4px;
+                            font-weight: 500;
+
+                            a {
+                                color: #333;
+                                font-size: 14px;
+                                text-decoration: none;
+                            }
+                        }
+
+                        .classification:extend(.clear-float) {
+                            display: inline;
+
+                            a {
+                                display: block;
+                                float: left;
+                                color: #999;
+                                height: 24px;
+                                line-height: 24px;
+                                font-size: 12px;
+                                margin-right: 10px;
+                            }
+                        }
+
+                        a {
+                            color: #333;
+                        }
+                    }
+                }
+
+                .home-page {
+                    width: 132px;
+                }
+
+                // 二级导航
+                .sec-nav-box {
+                    .secondary-navigation {
+                        display: none;
+                        position: absolute;
+                        top: 50px;
+                        left: 100%;
+                        z-index: 222222;
+                        width: 758px;
+                        background: #f4f4f4;
+                        border: 1px solid #e5e5e5;
+                        min-height: 389px;
+
+                        .sec-left {
+                            float: left;
+                            width: 520px;
+
+                            .sec-content {
+                                width: 100%;
+                                min-height: 45px;
+                                padding-top: 5px;
+                                padding-bottom: 5px;
+                                border-bottom: 1px dashed #e5e5e5;
+                                overflow: hidden;
+
+                                .sec-left-guider {
+                                    text-align: center;
+                                    padding-top: 10px;
+                                    padding-left: 20px;
+                                    float: left;
+                                    height: 20px;
+                                    line-height: 20px;
+
+
+                                    a {
+                                        background: #0cb95f;
+                                        font-size: 12px;
+                                        color: #fff;
+                                        height: 20px;
+                                        line-height: 20px;
+                                        display: block;
+                                        width: 73px;
+                                        float: left;
+
+                                        &:hover {
+                                            text-decoration: none;
+                                        }
+                                    }
+
+                                    .some-icon {
+                                        background-color: #0aa454;
+                                        display: block;
+                                        height: 20px;
+                                        width: 17px;
+                                        background-position: -14px -21px;
+                                        float: right;
+                                        margin: 0;
+                                    }
+                                }
+
+
+                                .sec-left-guider-content {
+                                    padding-top: 10px;
+                                    padding-bottom: 0;
+                                    text-align: left;
+                                    margin-top: -4px;
+                                    float: left;
+                                    line-height: 25px;
+                                    width: 395px;
+
+                                    a {
+                                        padding: 5px 8px;
+                                        text-indent: 8px;
+                                        font-size: 12px;
+                                        color: #999;
+                                        word-spacing: 25px;
+
+
+                                        &:hover {
+                                            color: #0cb95f;
+                                        }
+                                    }
+                                    #all-goods-classification{
+                                        &:hover{
+                                            color: #ffffff;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+
+                        // 右边部分
+                        .sec-right {
+                            float: right;
+                            width: 169px;
+                            margin-right: 20px;
+
+                            .factory-logo {
+                                overflow: hidden;
+                            }
+
+                            ul {
+                                margin-top: 15px;
+                                overflow: hidden;
+
+                                .f-logo {
+                                    float: left;
+                                    box-sizing: border-box;
+                                    margin: 0 0 4px 4px;
+                                    border: 1px solid #eaeaea;
+                                    width: 80px;
+                                    height: 40px;
+
+                                    &:nth-child(odd) {
+                                        margin: 0 4px 4px 0;
+                                    }
+
+                                    &:nth-child(even) {
+                                        margin: 0 0 4px 4px;
+                                    }
+
+                                    img {
+                                        width: 80px;
+                                        height: 40px;
+                                    }
+                                }
+
+                            }
+
+                            .shenbao {
+                                width: 166px;
+                                height: 120px;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                            .recommended-merchant {
+                                width: 100%;
+                                margin-bottom: 15px;
+                                background: #fff;
+                                border: 1px solid #ccc;
+                                padding-right: 15px;
+                                box-sizing: border-box;
+
+
+
+                                h6 {
+                                    padding-left: 20px;
+                                    font-size: 12px;
+                                    color: #666;
+                                    border-bottom: 1px dashed #e5e5e5;
+                                    height: 28px;
+                                    line-height: 28px;
+
+                                }
+
+                                li {
+                                    list-style: disc;
+                                    line-height: 12px;
+                                    width: 100%;
+                                    line-height: 28px;
+                                    height: 28px;
+                                    border: none;
+                                    margin: 0;
+                                    text-align: left;
+                                    padding-left: 20px;
+                                    background: url(../img/index/icons.png)no-repeat;
+                                    background-position: -490px -260px;
+
+                                    a {
+                                        display: block;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-align: left;
+                                        font-size: 12px;
+                                        color: #999;
+                                        margin-right: 20px;
+
+                                        &:hover {
+                                            color: #0aa454;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+
+
+                // 二级导航完
+            }
+
+
+        }
+    }
+}

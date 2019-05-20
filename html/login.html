@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录页</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../lib/jquery-3.1.1.min.js"></script>
+    <script src="../lib/jquery.cookie.js"></script>
+    <script src="../js/login.js"></script>
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <div class="header_top small">
+
+    </div>
+    <!-- 顶部完 -->
+
+    <!-- 头部 -->
+    <div class="header small">
+
+    </div>
+
+    <!-- 登录框 -->
+    <div class="login_main">
+        <div class="container clearfix">
+            <a class="left" href="javascript:void(0);"></a>
+            <div class="right">
+                <div class="form-tab">
+                    <div class="tab-item tab-checked" data-bind="default">
+                        账号登录
+                    </div>
+                    <span class="tab-line"></span>
+                    <div class="tab-item" data-bind="quick">
+                        快捷登录
+                    </div>
+                </div>
+                <div class="form-tab-wrap">
+                    <div class="form">
+                        <div class="login-item">
+                            <span>欢迎登录药房网商城</span><span class="r">没有账号？<a href="register.html">立即注册</a></span>
+                        </div>
+                        <input name="__RequestVerificationToken" type="hidden"
+                            value="v_9oj1uL98YgcFpk1aAFHKNtLKjUIOS2480vEpdPvhLwtJy_cDmUCzNWG20BRNu-qNWv7Opmz7XIawLZZ4F4xUj9IFjQKBZuccDja9gYwLI1">
+                        <div class="form_div mb0 js-form-default" data-bind="default">
+                            <div class="login-item">
+                                <span class="bginput"><input type="text" autocomplete="off" placeholder="用户名 / 已验证邮箱或手机"
+                                        class="input_big" id="txt_AccountName" maxlength="128" value=""><i
+                                        class="user"></i></span>
+                            </div>
+                            <div class="login-item mt">
+                                <span class="bginput"><input type="password" autocomplete="off" placeholder="登录密码"
+                                        class="input_big" id="txt_Password" maxlength="60"><i class="pass"></i></span>
+                            </div>
+                            <div class="login-item mt js_div_validate" style="display:none;">
+                                <span class="bginput">
+                                    <input placeholder="请输入验证码" id="txt_ValidateCode" maxlength="4"
+                                        class="input_big short" style="width:296px;text-transform: uppercase;">
+                                    <div class="valid-img-wrap">
+                                        <img class="imgVerify" src="/personaccount/validatecode?" alt="看不清？点击更换"
+                                            onclick="this.src=this.src+'?'" width="90" height="40">
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="login-item">
+                                <div class="ckdiv">
+                                    <div class="ck">
+                                        <i class=""></i>
+                                    </div>
+                                    记住用户名
+                                </div>
+                                <a class="r f" href="javascript:void(0);">忘记密码？</a>
+                            </div>
+
+                        </div>
+                        <div id="div_error" class="ltip">
+                            <i class="theicons"></i>
+                            <span class="text">用户名或密码错误</span>
+                        </div>
+
+                        <!-- 提交 -->
+                        <div class="login-item op">
+                            <a id="btn_Submit" class="btn2 b2" href="javascript:;">立即登录</a>
+                        </div>
+
+                        <div class="login-item">
+                            使用其它方式登录：
+                        </div>
+                        <div class="login-other clearfix">
+                            <a class="qq" href="javascript:void(0);"></a>
+                            <a class="weixin" href="javascript:void(0);"></a>
+                            <a class="alipay" href="javascript:void(0);"></a>
+                            <a class="weibo" href="javascript:void(0);"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- 登录框完 -->
+
+
+    <!-- 底部 -->
+    <div class="footer small">
+
+    </div>
+    <!-- 底部完 -->
+</body>
+
+</html>

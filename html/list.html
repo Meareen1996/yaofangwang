@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>列表页</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/layui.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <script src="../lib/jquery-3.1.1.min.js"></script>
+    <script src="../lib/jquery.cookie.js"></script>
+    <script src="../lib/pageMe.js"></script>
+    <script src="../lib/layui.all.js"></script>
+    <script src="../js/list.js"></script>
+</head>
+
+
+<body>
+    <div class="header">
+        <!-- 从首页引入 -->
+    </div>
+    <div class="top-search">
+        <!-- 从首页引入 -->
+    </div>
+    <div class="nav">
+        <!-- 从首页引入 -->
+    </div>
+    <!-- 主体部分 -->
+    <div class="main clearfix">
+        <div class="container clearfix">
+            <!-- 列表页左边 -->
+            <div class="pag-left fl">
+                <!-- 上半部分 -->
+                <div class="pag-left-top the_pl">
+                    <h4>所有类目</h4>
+                    <ul class="all-categories">
+                        <li class="single-category">
+                            <h5>
+                                <i></i>
+                                <a href="javascript:void(0);">中西药品</a>
+                            </h5>
+                            <div class="specific-stuff clearfix">
+                                <a href="javascript:void(0);" class="">胃肠用药</a>
+                                <a href="javascript:void(0);" class="">呼吸系统</a>
+                                <a href="javascript:void(0);" class="">心脑血管</a>
+                                <a href="javascript:void(0);" class="">家庭常用</a>
+                                <a href="javascript:void(0);" class="">风湿骨科</a>
+                                <a href="javascript:void(0);" class="">抗肿瘤药</a>
+                                <a href="javascript:void(0);" class="">皮肤科药</a>
+                                <a href="javascript:void(0);" class="">五官科药</a>
+                                <a href="javascript:void(0);" class="">妇科用药</a>
+                                <a href="javascript:void(0);" class="">男科用药</a>
+                                <a href="javascript:void(0);" class="">儿科用药</a>
+                                <a href="javascript:void(0);" class="">神经系统</a>
+                                <a href="javascript:void(0);" class="">肝胆用药</a>
+                                <a href="javascript:void(0);" class="">营养滋补</a>
+                                <a href="javascript:void(0);" class="">民族用药</a>
+                            </div>
+                        </li>
+                        <li class="single-category">
+                            <h5>
+                                <i></i>
+                                <a href="javascript:void(0);">医疗器械</a>
+                            </h5>
+                            <div class="specific-stuff clearfix">
+                                <a href="javascript:void(0);" class="">家庭常备</a>
+                                <a href="javascript:void(0);" class="">检测设备</a>
+                                <a href="javascript:void(0);" class="">助行器械</a>
+                                <a href="javascript:void(0);" class="">康复理疗</a>
+                                <a href="javascript:void(0);" class="">中医器械</a>
+                                <a href="javascript:void(0);" class="">医疗用品</a>
+                                <a href="javascript:void(0);" class="">供氧器械</a>
+                                <a href="javascript:void(0);" class="">外用贴膏</a>
+                                <a href="javascript:void(0);" class="">隐形眼镜</a>
+                            </div>
+                        </li>
+                        <li class="single-category">
+                            <h5>
+                                <i></i>
+                                <a href="javascript:void(0);">养生保健</a>
+                            </h5>
+                            <div class="specific-stuff clearfix">
+                                <a href="javascript:void(0);" class="">大众养生</a>
+                                <a href="javascript:void(0);" class="">男性保健</a>
+                                <a href="javascript:void(0);" class="">女性保健</a>
+                                <a href="javascript:void(0);" class="">中老年保健</a>
+                                <a href="javascript:void(0);" class="">青少年儿童</a>
+                            </div>
+                        </li>
+                        <li class="single-category">
+                            <h5>
+                                <i></i>
+                                <a href="javascript:void(0);">计生用品</a>
+                            </h5>
+                            <div class="specific-stuff clearfix">
+                                <a href="javascript:void(0);" class="">避孕用品</a>
+                                <a href="javascript:void(0);" class="">检测用品</a>
+                                <a href="javascript:void(0);" class="">情趣用品</a>
+                            </div>
+                        </li>
+                        <li class="single-category">
+                            <h5>
+                                <i></i>
+                                <a href="javascript:void(0);">中药饮片</a>
+                            </h5>
+                            <div class="specific-stuff clearfix">
+                                <a href="javascript:void(0);" class="">名贵中药</a>
+                                <a href="javascript:void(0);" class="">中药材</a>
+                                <a href="javascript:void(0);" class="">中药粉末</a>
+                                <a href="javascript:void(0);" class="">茶</a>
+                            </div>
+                        </li>
+                        <li class="single-category">
+                            <h5>
+                                <i></i>
+                                <a href="javascript:void(0);">美容护肤</a>
+                            </h5>
+                            <div class="specific-stuff clearfix">
+                                <a href="javascript:void(0);" class="">祛痘祛斑</a>
+                                <a href="javascript:void(0);" class="">时尚彩妆</a>
+                                <a href="javascript:void(0);" class="">身体护理</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 上半部分完 -->
+                <!-- 下半部分 -->
+                <div class="pag-left-bottom the_pl">
+                    <h4>同类商品</h4>
+                    <ul class="the_goods">
+                        <li class="single-goods">
+                            <a class="photo" href="javascript:void(0);">
+                                <img src="../img/index/f5aeac29-b66d-4af1-86f1-0473d61ac29f5339.jpg_300x300" alt="胃得安片">
+                            </a>
+                            <a href="javascript:void(0);" class="txt nofix" target="_blank" title="胃得安片">胃得安片-福州梅峰制药</a>
+                            <p class="st">
+                                0.46gx45片/瓶
+                            </p>
+                            <p class="subtitle">
+                                和胃止痛。用于胃痛，胃酸偏多者。
+                            </p>
+                            <p class="money">
+                                ¥11.16
+                            </p>
+                        </li>
+                        <li class="single-goods">
+                            <a class="photo" href="javascript:void(0);">
+                                <img src="../img/index/13626c5e-3363-466d-ac8e-e8ff9a2429e83373.jpg_300x300" alt="胃得安片">
+                            </a>
+                            <a href="javascript:void(0);" class="txt nofix" target="_blank" title="胃得安片">胃得安片-福州梅峰制药</a>
+                            <p class="st">
+                                0.46gx45片/瓶
+                            </p>
+                            <p class="subtitle">
+                                和胃止痛。用于胃痛，胃酸偏多者。
+                            </p>
+                            <p class="money">
+                                ¥11.16
+                            </p>
+                        </li>
+                        <li class="single-goods">
+                            <a class="photo" href="javascript:void(0);">
+                                <img src="../img/index/543e4ce4-5a59-4516-9483-1523db6510392752.jpg_300x300" alt="胃得安片">
+                            </a>
+                            <a href="javascript:void(0);" class="txt nofix" target="_blank" title="胃得安片">胃得安片-福州梅峰制药</a>
+                            <p class="st">
+                                0.46gx45片/瓶
+                            </p>
+                            <p class="subtitle">
+                                和胃止痛。用于胃痛，胃酸偏多者。
+                            </p>
+                            <p class="money">
+                                ¥11.16
+                            </p>
+                        </li>
+                        <li class="single-goods">
+                            <a class="photo" href="javascript:void(0);">
+                                <img src="../img/index/5e1967c7-8644-4f96-930f-2bd26a6bb7908433.jpg_300x300" alt="胃得安片">
+                            </a>
+                            <a href="javascript:void(0);" class="txt nofix" target="_blank" title="胃得安片">胃得安片-福州梅峰制药</a>
+                            <p class="st">
+                                0.46gx45片/瓶
+                            </p>
+                            <p class="subtitle">
+                                和胃止痛。用于胃痛，胃酸偏多者。
+                            </p>
+                            <p class="money">
+                                ¥11.16
+                            </p>
+                        </li>
+                        <li class="single-goods">
+                            <a class="photo" href="javascript:void(0);">
+                                <img src="../img/index/df0aa15a-31a3-426d-80ca-2e932bc0242d1957.jpg_300x300" alt="胃得安片">
+                            </a>
+                            <a href="javascript:void(0);" class="txt nofix" target="_blank" title="胃得安片">胃得安片-福州梅峰制药</a>
+                            <p class="st">
+                                0.46gx45片/瓶
+                            </p>
+                            <p class="subtitle">
+                                和胃止痛。用于胃痛，胃酸偏多者。
+                            </p>
+                            <p class="money">
+                                ¥11.16
+                            </p>
+                        </li>
+                        <li class="single-goods">
+                            <a class="photo" href="javascript:void(0);">
+                                <img src="../img/index/93f7edcb-6c8d-44db-954c-081c4ce463b04542.jpg_300x300" alt="胃得安片">
+                            </a>
+                            <a href="javascript:void(0);" class="txt nofix" target="_blank" title="胃得安片">胃得安片-福州梅峰制药</a>
+                            <p class="st">
+                                0.46gx45片/瓶
+                            </p>
+                            <p class="subtitle">
+                                和胃止痛。用于胃痛，胃酸偏多者。
+                            </p>
+                            <p class="money">
+                                ¥11.16
+                            </p>
+                        </li>
+                        <li class="single-goods">
+                            <a class="photo" href="javascript:void(0);">
+                                <img src="../img/index/738b6fe6-b9b6-44c8-9d51-de155d19885b7512.jpg_300x300" alt="胃得安片">
+                            </a>
+                            <a href="javascript:void(0);" class="txt nofix" target="_blank" title="胃得安片">胃得安片-福州梅峰制药</a>
+                            <p class="st">
+                                0.46gx45片/瓶
+                            </p>
+                            <p class="subtitle">
+                                和胃止痛。用于胃痛，胃酸偏多者。
+                            </p>
+                            <p class="money">
+                                ¥11.16
+                            </p>
+                        </li>
+                        <li class="single-goods">
+                            <a class="photo" href="javascript:void(0);">
+                                <img src="../img/index/5acfd7e3-b54d-42d4-bddf-d736006ba6f64503.jpg_300x300" alt="胃得安片">
+                            </a>
+                            <a href="javascript:void(0);" class="txt nofix" target="_blank" title="胃得安片">胃得安片-福州梅峰制药</a>
+                            <p class="st">
+                                0.46gx45片/瓶
+                            </p>
+                            <p class="subtitle">
+                                和胃止痛。用于胃痛，胃酸偏多者。
+                            </p>
+                            <p class="money">
+                                ¥11.16
+                            </p>
+                        </li>
+                        <li class="single-goods">
+                            <a class="photo" href="javascript:void(0);">
+                                <img src="../img/index/988ee580-5d90-4f97-ae76-7452ed600be92896.jpg_300x300" alt="胃得安片">
+                            </a>
+                            <a href="javascript:void(0);" class="txt nofix" target="_blank" title="胃得安片">胃得安片-福州梅峰制药</a>
+                            <p class="st">
+                                0.46gx45片/瓶
+                            </p>
+                            <p class="subtitle">
+                                和胃止痛。用于胃痛，胃酸偏多者。
+                            </p>
+                            <p class="money">
+                                ¥11.16
+                            </p>
+                        </li>
+                        <li class="single-goods">
+                            <a class="photo" href="javascript:void(0);">
+                                <img src="../img/index/fcd7fb09-69d6-4a3f-8268-3aea8728088a2501.jpg_300x300" alt="胃得安片">
+                            </a>
+                            <a href="javascript:void(0);" class="txt nofix" target="_blank" title="胃得安片">胃得安片-福州梅峰制药</a>
+                            <p class="st">
+                                0.46gx45片/瓶
+                            </p>
+                            <p class="subtitle">
+                                和胃止痛。用于胃痛，胃酸偏多者。
+                            </p>
+                            <p class="money">
+                                ¥11.16
+                            </p>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <!-- 列表页右边 -->
+            <div class="pag-right fl">
+                <div class="breadcrumb">
+                    <a href="javascript:void(0);">药房网商城</a><i></i>
+                    <a href="javascript:void(0);">中西药品<s></s></a><i></i><strong>胃肠用药</strong>
+                </div>
+                <div class="select clearfix">
+                    <div class="opt">
+                        <div class="tj">
+                            共<b>10548 </b>件相关商品
+                        </div>
+                    </div>
+                    <ul class="sitems">
+                        <li>
+                            <span class="bit">适应范围：</span>
+                            <a title="胃炎" href="javascript:void(0);">胃炎</a>
+                            <a title="胃溃疡" href="javascript:void(0);">胃溃疡</a>
+                            <a title="急性肠炎" href="javascript:void(0);">急性肠炎</a>
+                            <a title="十二指肠溃疡" href="javascript:void(0);">十二指肠溃疡</a>
+                            <a title="胆囊炎" href="javascript:void(0);">胆囊炎</a>
+                            <a title="便秘" href="javascript:void(0);">便秘</a>
+                            <a title="消化不良" href="javascript:void(0);">消化不良</a>
+                            <a title="痔疮" href="javascript:void(0);">痔疮</a>
+                            <a title="腹痛腹泻" href="javascript:void(0);">腹痛腹泻</a>
+                        </li>
+                        <li>
+                            <span class="bit">厂家选择：</span>
+                            <a title="昆明积大制药股份有限公司" href="javascript:void(0);">昆明积大</a>
+                            <a title="东北制药集团沈阳第一制药有限公司" href="javascript:void(0);">沈阳第一制药</a>
+                            <a title="四川泰华堂制药有限公司" href="javascript:void(0);">四川泰华堂</a>
+                            <a title="烟台荣昌制药股份有限公司" href="javascript:void(0);">烟台荣昌</a>
+                            <a title="西南药业股份有限公司" href="javascript:void(0);">西南药业</a>
+                            <a title="北京红林制药有限公司" href="javascript:void(0);">北京红林</a>
+                            <a title="江西山香药业有限公司" href="javascript:void(0);">江西山香</a>
+                            <a title="金日制药(中国)有限公司" href="javascript:void(0);">金日制药</a>
+                            <a title="广州柏赛罗药业有限公司" href="javascript:void(0);">广州柏赛罗</a>
+                            <a title="通化兴华药业有限责任公司" href="javascript:void(0);">通化兴华</a>
+                            <a title="内蒙古凯蒙药业有限公司" href="javascript:void(0);">内蒙古凯蒙</a>
+                            <a title="哈药集团三精制药四厂有限公司" href="javascript:void(0);">哈药四厂</a>
+                            <a title="广东岭南制药有限公司" href="javascript:void(0);">广东岭南制药</a>
+                            <a title="哈尔滨凯程制药有限公司" href="javascript:void(0);">哈尔滨凯程</a>
+                            <a title="沈阳同联药业有限公司" href="javascript:void(0);">沈阳同联</a>
+                            <a title="上海金城药业有限公司" href="javascript:void(0);">金城药业</a>
+                            <span id="sp_mill_more" class="plus"><label>展开</label><i class="icons"></i></span>
+                            <div id="mill_more" class="more">
+                                <a title="江苏正大丰海制药有限公司" href="javascript:void(0);">正大丰海</a>
+                                <a title="上海信谊天平药业有限公司" href="javascript:void(0);">天平药业</a>
+                                <a title="国药集团武汉中联四药药业有限公司" href="javascript:void(0);">武汉中联四药</a>
+                                <a title="广西南宁百会药业集团有限公司" href="javascript:void(0);">南宁百会</a>
+                                <a title="山西太原药业有限公司" href="javascript:void(0);">太原药业</a>
+                                <a title="山西云鹏制药有限公司" href="javascript:void(0);">山西云鹏</a>
+                                <a title="广东一力集团制药股份有限公司" href="javascript:void(0);">一力制药</a>
+                                <a title="河北利鑫制药有限公司" href="javascript:void(0);">利鑫制药</a>
+                                <a title="石家庄康力药业有限公司" href="javascript:void(0);">石家庄康力</a>
+                                <a title="山西鑫煜制药有限公司" href="javascript:void(0);">山西鑫煜</a>
+                                <a title="大同市云岗制药有限公司" href="javascript:void(0);">大同云岗制药</a>
+                                <a title="青岛黄海制药有限责任公司" href="javascript:void(0);">青岛黄海制药</a>
+                                <a title="百正药业股份有限公司" href="javascript:void(0);">百正药业</a>
+                                <a title="丹东医创药业有限责任公司" href="javascript:void(0);">丹东医创药业</a>
+                                <a title="山西亨瑞达制药有限公司" href="javascript:void(0);">山西亨瑞</a>
+                                <a title="上海青平药业有限公司" href="javascript:void(0);">上海青平</a>
+                                <a title="三门峡赛诺维制药有限公司" href="javascript:void(0);">三门峡赛诺维</a>
+                                <a title="拜耳医药保健有限公司" href="javascript:void(0);">拜耳医药</a>
+                                <a title="苏州东瑞制药有限公司" href="javascript:void(0);">苏州东瑞</a>
+                                <a title="济川药业集团有限公司" href="javascript:void(0);">江苏济川</a>
+                                <a title="济南恒基制药有限公司" href="javascript:void(0);">济南恒基</a>
+                                <a title="湖南华纳大药厂股份有限公司" href="javascript:void(0);">华纳药厂</a>
+                                <a title="国药集团汕头金石制药有限公司" href="javascript:void(0);">汕头金石</a>
+                                <a title="丽珠集团丽珠制药厂" href="javascript:void(0);">丽珠制药</a>
+                                <a title="四川华新制药有限公司" href="javascript:void(0);">四川华新</a>
+                                <a title="重庆科瑞制药(集团)有限公司" href="javascript:void(0);">科瑞制药</a>
+                                <a title="浙江华润三九众益制药有限公司" href="javascript:void(0);">浙江众益</a>
+                                <a title="浙江美克药业有限公司" href="javascript:void(0);">美克药业</a>
+                                <a title="赣州邦达高科制药有限公司" href="javascript:void(0);">赣州邦达</a>
+                                <a title="辅仁药业集团有限公司" href="javascript:void(0);">辅仁药业</a>
+                                <a title="广东香山堂制药有限公司" href="javascript:void(0);">尼克美制药</a>
+                                <a title="郑州韩都药业集团有限公司" href="javascript:void(0);">郑州韩都</a>
+                                <a title="天津和治友德制药有限公司" href="javascript:void(0);">天津友德</a>
+                                <a title="河北奥星集团药业有限公司" href="javascript:void(0);">河北奥星</a>
+                                <a title="吉林延边朝药药业有限公司" href="javascript:void(0);">朝药药业</a>
+                                <a title="山西新宝源制药有限公司" href="javascript:void(0);">新宝源制药</a>
+                                <a title="山西邦仕得药业有限公司" href="javascript:void(0);">山西邦仕得药业有限公司</a>
+                                <a title="太原市振兴制药有限责任公司" href="javascript:void(0);">太原振兴</a>
+                                <a title="山西千汇药业有限公司" href="javascript:void(0);">山西千汇</a>
+                                <a title="国药集团同济堂(贵州)制药有限公司" href="javascript:void(0);">贵州同济堂</a>
+                                <a title="广东彼迪药业有限公司" href="javascript:void(0);">广东彼迪</a>
+                                <a title="浙江得恩德制药股份有限公司" href="javascript:void(0);">得恩德制药</a>
+                                <a title="黑龙江江世药业有限公司" href="javascript:void(0);">黑龙江江世</a>
+                                <a title="山西同达药业有限公司" href="javascript:void(0);">山西同达</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bit">品牌选择：</span>
+                            <a title="积大志卫灵" href="javascript:void(0);">积大志卫灵</a>
+                            <a title="珍稀渭" href="javascript:void(0);">珍稀渭</a>
+                            <a title="唯诺平" href="javascript:void(0);">唯诺平</a>
+                            <a title="仕卫" href="javascript:void(0);">仕卫</a>
+                            <a title="谓屏" href="javascript:void(0);">谓屏</a>
+                            <a title="好卫特" href="javascript:void(0);">好卫特</a>
+                            <a title="卫复灵" href="javascript:void(0);">卫复灵</a>
+                            <a title="贝兰德" href="javascript:void(0);">贝兰德</a>
+                            <a title="凯蒙" href="javascript:void(0);">凯蒙</a>
+                            <a title="新胃必治" href="javascript:void(0);">新胃必治</a>
+                            <a title="岭南卫必治" href="javascript:void(0);">岭南卫必治</a>
+                            <a title="凯程必治" href="javascript:void(0);">凯程必治</a>
+                            <a title="胃铋治片" href="javascript:void(0);">胃铋治片</a>
+                            <a title="仁和" href="javascript:void(0);">仁和</a>
+                            <a title="奥兰特" href="javascript:void(0);">奥兰特</a>
+                            <a title="天平" href="javascript:void(0);">天平</a>
+                            <span id="sp_aliascn_more" class="plus"><label id="tip_aliascn_more">展开</label><i
+                                    class="icons"></i></span>
+                            <div id="aliascn_more" class="more">
+                                <a title="三门峡" href="javascript:void(0);">三门峡</a>
+                                <a title="罗内" href="javascript:void(0);">罗内</a>
+                                <a title="先瑞" href="javascript:void(0);">先瑞</a>
+                                <a title="丽珠得乐" href="javascript:void(0);">丽珠得乐</a>
+                                <a title="为疏林" href="javascript:void(0);">为疏林</a>
+                                <a title="永治" href="javascript:void(0);">永治</a>
+                                <a title="华纳得乐" href="javascript:void(0);">华纳得乐</a>
+                                <a title="辅仁" href="javascript:void(0);">辅仁</a>
+                                <a title="奥星" href="javascript:void(0);">奥星</a>
+                                <a title="维敏胶囊" href="javascript:void(0);">维敏胶囊</a>
+                                <a title="君美舒" href="javascript:void(0);">君美舒</a>
+                                <a title="云鹏" href="javascript:void(0);">云鹏</a>
+                                <a title="彼司谓" href="javascript:void(0);">彼司谓</a>
+                                <a title="安特" href="javascript:void(0);">安特</a>
+                                <a title="U比乐" href="javascript:void(0);">U比乐</a>
+                                <a title="恒爱" href="javascript:void(0);">恒爱</a>
+                                <a title="白云山" href="javascript:void(0);">白云山</a>
+                                <a title="修正堂" href="javascript:void(0);">修正堂</a>
+                                <a title="欧敏" href="javascript:void(0);">欧敏</a>
+                                <a title="瑞斯达" href="javascript:void(0);">瑞斯达</a>
+                                <a title="威门" href="javascript:void(0);">威门</a>
+                                <a title="益中康" href="javascript:void(0);">益中康</a>
+                                <a title="君山" href="javascript:void(0);">君山</a>
+                                <a title="得恩德" href="javascript:void(0);">得恩德</a>
+                                <a title="正道邦克" href="javascript:void(0);">正道邦克</a>
+                                <a title="安邦" href="javascript:void(0);">安邦</a>
+                                <a title="一度" href="javascript:void(0);">一度</a>
+                                <a title="九州通" href="javascript:void(0);">九州通</a>
+                                <a title="汇仁" href="javascript:void(0);">汇仁</a>
+                                <a title="善得康" href="javascript:void(0);">善得康</a>
+                                <a title="兰百幸" href="javascript:void(0);">兰百幸</a>
+                                <a title="喜人" href="javascript:void(0);">喜人</a>
+                                <a title="世康特" href="javascript:void(0);">世康特</a>
+                                <a title="乐宁" href="javascript:void(0);">乐宁</a>
+                                <a title="漢森" href="javascript:void(0);">漢森</a>
+                                <a title="育林" href="javascript:void(0);">育林</a>
+                                <a title="允康" href="javascript:void(0);">允康</a>
+                                <a title="康尔" href="javascript:void(0);">康尔</a>
+                                <a title="寿堂" href="javascript:void(0);">寿堂</a>
+                                <a title="雷立雅" href="javascript:void(0);">雷立雅</a>
+                                <a title="盘龙" href="javascript:void(0);">盘龙</a>
+                                <a title="金雷立雅" href="javascript:void(0);">金雷立雅</a>
+                                <a title="天康" href="javascript:void(0);">天康</a>
+                                <a title="泰德" href="javascript:void(0);">泰德</a>
+                            </div>
+                        </li>
+                        <li class="nb">
+                            <span class="bit">剂型选择：</span>
+                            <a title="片剂" href="javascript:void(0);">片剂</a>
+                            <a title="薄膜衣片剂" href="javascript:void(0);">薄膜衣片剂</a>
+                            <a title="胶囊剂" href="javascript:void(0);">胶囊剂</a>
+                            <a title="口服溶液剂" href="javascript:void(0);">口服溶液剂</a>
+                            <a title="硬胶囊剂" href="javascript:void(0);">硬胶囊剂</a>
+                            <a title="混悬剂" href="javascript:void(0);">混悬剂</a>
+                            <a title="糖衣片剂" href="javascript:void(0);">糖衣片剂</a>
+                            <a title="水丸剂" href="javascript:void(0);">水丸剂</a>
+                            <a title="丸剂" href="javascript:void(0);">丸剂</a>
+                            <a title="水丸剂(1.25g)" href="javascript:void(0);">水丸剂(1.25g)</a>
+                            <a title="水丸剂(2g)" href="javascript:void(0);">水丸剂(2g)</a>
+                            <a title="大蜜丸剂" href="javascript:void(0);">大蜜丸剂</a>
+                            <a title="颗粒剂" href="javascript:void(0);">颗粒剂</a>
+                            <a title="颗粒剂(无糖型)" href="javascript:void(0);">颗粒剂(无糖型)</a>
+                            <a title="溶液剂" href="javascript:void(0);">溶液剂</a>
+                            <a title="散剂" href="javascript:void(0);">散剂</a>
+                            <span id="sp_trochetype_more" class="plus"><label id="tip_trochetype_more">展开</label><i
+                                    class="icons"></i></span>
+                            <div id="trochetype_more" class="more">
+                                <a title="膏剂" href="javascript:void(0);">膏剂</a>
+                                <a title="薄膜衣片" href="javascript:void(0);">薄膜衣片</a>
+                                <a title="胶囊剂(OTC)" href="javascript:void(0);">胶囊剂(OTC)</a>
+                                <a title="浓缩丸剂" href="javascript:void(0);">浓缩丸剂</a>
+                                <a title="合剂" href="javascript:void(0);">合剂</a>
+                                <a title="水蜜丸剂" href="javascript:void(0);">水蜜丸剂</a>
+                                <a title="注射剂" href="javascript:void(0);">注射剂</a>
+                                <a title="酊剂" href="javascript:void(0);">酊剂</a>
+                                <a title="滴丸剂" href="javascript:void(0);">滴丸剂</a>
+                                <a title="软胶囊剂" href="javascript:void(0);">软胶囊剂</a>
+                                <a title="煎膏剂" href="javascript:void(0);">煎膏剂</a>
+                                <a title="搽剂" href="javascript:void(0);">搽剂</a>
+                                <a title="茶剂" href="javascript:void(0);">茶剂</a>
+                                <a title="颗粒剂(含糖型)" href="javascript:void(0);">颗粒剂(含糖型)</a>
+                                <a title="干混悬剂" href="javascript:void(0);">干混悬剂</a>
+                                <a title="泡腾颗粒剂" href="javascript:void(0);">泡腾颗粒剂</a>
+                                <a title="咀嚼片" href="javascript:void(0);">咀嚼片</a>
+                                <a title="混悬颗粒剂" href="javascript:void(0);">混悬颗粒剂</a>
+                                <a title="可溶性颗粒剂" href="javascript:void(0);">可溶性颗粒剂</a>
+                                <a title="浓缩水丸剂" href="javascript:void(0);">浓缩水丸剂</a>
+                                <a title="小蜜丸剂" href="javascript:void(0);">小蜜丸剂</a>
+                                <a title="滴剂(粉盒)" href="javascript:void(0);">滴剂(粉盒)</a>
+                                <a title="滴剂" href="javascript:void(0);">滴剂</a>
+                                <a title="口服溶液剂(含糖型)" href="javascript:void(0);">口服溶液剂(含糖型)</a>
+                                <a title="口服溶液剂(无糖型)" href="javascript:void(0);">口服溶液剂(无糖型)</a>
+                                <a title="糖浆剂" href="javascript:void(0);">糖浆剂</a>
+                                <a title="颗粒剂(新包装)" href="javascript:void(0);">颗粒剂(新包装)</a>
+                                <a title="口服混悬剂" href="javascript:void(0);">口服混悬剂</a>
+                                <a title="注射剂(静脉滴注)" href="javascript:void(0);">注射剂(静脉滴注)</a>
+                                <a title="片剂(蓝盒)" href="javascript:void(0);">片剂(蓝盒)</a>
+                                <a title="片剂(白盒)" href="javascript:void(0);">片剂(白盒)</a>
+                                <a title="凝胶剂" href="javascript:void(0);">凝胶剂</a>
+                                <a title="栓剂" href="javascript:void(0);">栓剂</a>
+                                <a title="片剂(新包装)" href="javascript:void(0);">片剂(新包装)</a>
+                                <a title="注射剂(简)" href="javascript:void(0);">注射剂(简)</a>
+                                <a title="注射剂(精)" href="javascript:void(0);">注射剂(精)</a>
+                                <a title="注射液" href="javascript:void(0);">注射液</a>
+                                <a title="注射剂(塑瓶)" href="javascript:void(0);">注射剂(塑瓶)</a>
+                                <a title="注射剂(玻瓶)" href="javascript:void(0);">注射剂(玻瓶)</a>
+                                <a title="注射剂(玻璃瓶)" href="javascript:void(0);">注射剂(玻璃瓶)</a>
+                                <a title="注射剂(塑料瓶)" href="javascript:void(0);">注射剂(塑料瓶)</a>
+                                <a title="片剂(白色)" href="javascript:void(0);">片剂(白色)</a>
+                                <a title="片剂(橙色)" href="javascript:void(0);">片剂(橙色)</a>
+                                <a title="曲剂" href="javascript:void(0);">曲剂</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter clearfix mt20">
+                    <div class="ckdiv n">
+                        <div class="ra">
+                            <i class="checked"></i>
+                        </div>
+                        <a href="javascript:void(0);">仅显示有报价商品</a>
+                    </div>
+                    <div class="ckdiv">
+                        <div class="ra">
+                            <i class=""></i>
+                        </div>
+                        <a href="javascript:void(0);">显示所有商品</a>
+                    </div>
+                    <div class="page">
+                        <a class="l d" href="javascript:void(0);"></a><span class="num"><label>1</label> / 264</span><a
+                            title="下一页" href="javascript:void(0);" class="r"></a>
+                    </div>
+                </div>
+                <ul class="goodlist clearfix">
+                    <!-- 渲染商品 -->
+                </ul>
+
+                <div class="pager clearfix">
+                    <div id="green_page"></div>
+                    <!-- <div id="page"></div> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <!-- 从首页引入 -->
+    </div>
+</body>
+
+</html>
